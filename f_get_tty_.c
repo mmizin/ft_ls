@@ -1,29 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   f_print_files.c                                    :+:      :+:    :+:   */
+/*   f_get_tty_.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nmizin <nmizin@student.unit.ua>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/04/20 21:26:00 by nmizin            #+#    #+#             */
-/*   Updated: 2018/04/20 21:26:00 by nmizin           ###   ########.fr       */
+/*   Created: 2018/05/17 21:10:00 by nmizin            #+#    #+#             */
+/*   Updated: 2018/05/17 21:10:00 by nmizin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+
 #include "ft_ls.h"
-#include "ft_printf.h"
 
-int 	f_print_files(t_ls *lls)
+int		f_get_tty_width(t_get_file **a, t_ls *l)
 {
-	char 		*name;
+	struct ttysize wnd;
 
-	int i = 0;
-	while (i < lls->c)
-	{
-//		name = lls->get_name[i]->name;
-		printf("name = %s\n", name);
-		i++;
-	}
+	ioctl(0, TIOCGSIZE, &wnd);
+//	printf("::: LINE ::: %d\n", wnd.ts_cols);
+//	printf("::: LNG_NAME ::: %ju\n", a[0]->lng_name);
+	l->width = wnd.ts_cols / (a[0]->lng_name + 8) + 1;
+	l->width = 4;																/* DELL THIS DELL THIS DELL THIS */
+	l->line = (a[0]->c_arg / l->width) > 0 ? (a[0]->c_arg / l->width) : 1;
 	return (1);
 }
-

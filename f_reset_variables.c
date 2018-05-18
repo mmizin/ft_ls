@@ -18,6 +18,7 @@ int		f_reset_variabels(t_ls *lls)
 	lls->i			= 0;
 	lls->j			= 0;
 	lls->tmp		= 0;
+	lls->c			= 0;
 	lls->dname		= NULL;
 	lls->fname		= NULL;
 	return (1);

@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   f_check_argv.c                                     :+:      :+:    :+:   */
+/*   f_check_ar.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nmizin <nmizin@student.unit.ua>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -11,92 +11,119 @@
 /* ************************************************************************** */
 
 #include "ft_ls.h"
-#include "ft_printf.h"
 
-static int 		f_initialize_flg(t_ls *lls, char res)
+static int		f_fill_arr_error_(char **argv, t_ls *l)
 {
-	if (res == 'l')
-		lls->l = 1;
-	else if (res == 'R')
-		lls->r_b = 1;
-	else if (res == 'r')
-		lls->r = 1;
-	else if (res == 't')
-		lls->t = 1;
-	else if (res == 'a')
-		lls->a = 1;
-	else if (res == 'n')
-		lls->n = 1;
-	return (1);
-}
+	int i;
 
-static int		f_part_one_(char **argv, t_ls *v, t_ls *lls)
-{
-	if ((f_scmp(".", argv[v->i]) && (lls->dot = 1)) ||
-			(f_scmp("..", argv[v->i]) && (lls->dot = 1)))
+	i = 1;
+	l->eror = (char **)malloc(sizeof(char *) * (l->c + 1));
+	l->eror[l->c] = NULL;
+	l->dir_on = 0;
+	while (i < l->a_rgc)
 	{
-		return (0);
-	}
-	else if ((argv[v->i][0] == '-' && argv[v->i][1] == '-') || lls->dashs)
-	{
-		lls->dashs = 1;
-		return (0);
-	}
-	return (1);
-}
-
-static int 		f_get_flag(t_ls *lls, t_ls *v, char **argv)
-{
-	if (lls->dot && lls->on_flag)		/* проверяем что если есть ('.' || '..' || '-') && один из флагов уже включен */
-	{
-		ft_printf(":::ERROR ::: AFTER DOT WAS FOUND FLAGS:::\n");
-		return (0);
-	}
-
-	if ((v->res = (ft_strchr(FLAGS, argv[v->i][v->j]))))
-		f_initialize_flg(lls, *(v->res));
-	if (v->res == NULL)
-	{
-		ft_printf("ls: illegal option -- %c\n", argv[v->i][v->j]);
-		ft_printf("usage: ls [%s] [file ...]\n", FLAGS);
-		exit(EXIT_FAILURE);
-	}
-	if (argv[v->i][v->j] && argv[v->i][v->j + 1] == '-')
-	{
-		ft_printf("ls: illegal option -- -\n");
-		ft_printf("usage: ls [%s] [file ...]\n", FLAGS);
-		exit(EXIT_FAILURE);
-	}
-	return (1);
-}
-
-int				f_ls_chk_argv(char **argv, t_ls *lls)
-{
-	t_ls	v;
-
-	f_ls_initialize(&v, lls->a_rgc);
-		if (!f_scmp(argv[1], "./ft_ls"))
+		(argv[i][0] != '-' && !stat(argv[i], &l->mystat)) ? l->dir_on = 1 : 0;
+		if (argv[i][0] != '-' && stat(argv[i], &l->mystat))
 		{
-			ft_printf(":::COMAND LS WAS NOT FOUND:::\n");			/*Change from 1 to 0 */
-			exit(EXIT_FAILURE);
+			l->dir_on = 1;
+			l->eror[l->j] = (char *)malloc(sizeof(char)
+											* ((l->tmp = f_slen(argv[i])) + 1));
+			l->eror[l->j][l->tmp] = '\0';
+			l->eror[l->j++] = f_sdup(argv[i]);
 		}
-		while (++v.i < lls->a_rgc)
+		f_scmp("-", argv[i]) ? l->dir_on = 1 : 0;
+		if (f_scmp(argv[i], "--"))
 		{
-			v.j = 0;
-			while (argv[v.i][v.j])
+			l->dir_on ? 0 : (l->dashs = 1);
+		}
+		if ((f_scmp(argv[i], ".")
+			 && (l->dot = 1)) || (f_scmp(argv[i], "..") && (l->d_dot = 1)))
+		{
+			l->dir_on = 1;
+		}
+		else if (argv[i][0] == '-' && !l->dashs && !l->dir_on)
+			;
+		else if (argv[i][0] == '-' && (!l->dashs && l->dir_on))
+		{
+			if (stat(argv[i], &l->mystat))
 			{
-				v.j++;
-				if (!f_part_one_(argv, &v, lls))
-					break ;
-				if ((argv[v.i][0] == '-' && argv[v.i][1] != '-') && (!lls->dashs))
-				{
-					lls->on_flag = 1;
-					if (!f_get_flag(lls, &v, argv))
-						break ;
-				}
-				else
-					break ;
+				l->eror[l->j] = (char *)malloc(sizeof(char)
+									   * ((l->tmp = f_slen(argv[i])) + 1));
+				l->eror[l->j][l->tmp] = '\0';
+				l->eror[l->j++] = f_sdup(argv[i]);
 			}
 		}
+		else if (argv[i][0] == '-' && l->dashs)
+		{
+			if (stat(argv[i], &l->mystat))
+			{
+				l->eror[l->j] = (char *)malloc(sizeof(char)
+									   * ((l->tmp = f_slen(argv[i])) + 1));
+				l->eror[l->j][l->tmp] = '\0';
+				l->eror[l->j++] = f_sdup(argv[i]);
+			}
+		}
+		i++;
+	}
 	return (1);
 }
+
+
+
+int				f_ls_chk_argv(char **argv, t_ls *l)
+{
+	int		i;
+	int 	j;
+
+//		if (!f_scmp(ar[0], "./ft_ls"))
+//		{
+//			ft_printf(":::COMAND LS WAS NOT FOUND:::\n");			/* Change from 1 to 0 */
+//			exit(EXIT_FAILURE);
+//		}
+	i = 1;
+	while (i < l->a_rgc)
+	{
+		(argv[i][0] != '-' && !stat(argv[i], &l->mystat)) ? l->dir_on = 1 : 0;
+		(argv[i][0] != '-' && stat(argv[i], &l->mystat)) ? ++l->c && (l->dir_on = 1) : 0;
+		f_scmp("-", argv[i]) ? l->dir_on = 1 : 0;
+		if (f_scmp(argv[i], "--"))
+		{
+			l->dir_on ? 0 : (l->dashs = 1);
+		}
+		if ((f_scmp(argv[i], ".") && (l->dot = 1)) || (f_scmp(argv[i], "..") && (l->d_dot = 1)))
+		{
+			l->dir_on = 1;
+		}
+		else if (argv[i][0] == '-' && !l->dashs && !l->dir_on)
+		{
+			j = 1;
+			while (argv[i][j])
+			{
+				if ((l->res = ft_strchr(FLAGS, argv[i][j])))
+				{
+					f_initialize_flg(l, *l->res) && j++;
+				}
+
+				else if (!l->res)
+				{
+					ft_printf("ls: illegal option -- %c\nusage: ls [-%s] "
+									  "[file ...]\n", argv[i][j], FLAGS);
+					exit(EXIT_FAILURE);
+				}
+			}
+		}
+		else if (argv[i][0] == '-' && (!l->dashs && l->dir_on))
+		{
+			!stat(argv[i], &l->mystat) ? 0 : l->c++;
+		}
+		else if (argv[i][0] == '-' && l->dashs)
+		{
+			!stat(argv[i], &l->mystat) ? 0 : l->c++;
+		}
+		i++;
+	}
+	if (l->c)
+		f_fill_arr_error_(argv, l);
+	return (l->dir_on = 0);
+}
+

@@ -3,76 +3,101 @@
 
 CMakeFiles/FT_LS.dir/f_bzero.c.o: ../f_bzero.c
 CMakeFiles/FT_LS.dir/f_bzero.c.o: ../ft_ls.h
+CMakeFiles/FT_LS.dir/f_bzero.c.o: ../nmizin_printf/ft_printf.h
 
-CMakeFiles/FT_LS.dir/f_check_argv.c.o: ../nmizin_printf/ft_printf.h
 CMakeFiles/FT_LS.dir/f_check_argv.c.o: ../f_check_argv.c
 CMakeFiles/FT_LS.dir/f_check_argv.c.o: ../ft_ls.h
+CMakeFiles/FT_LS.dir/f_check_argv.c.o: ../nmizin_printf/ft_printf.h
 
 CMakeFiles/FT_LS.dir/f_count_files_in_print.c.o: ../f_count_files_in_print.c
 CMakeFiles/FT_LS.dir/f_count_files_in_print.c.o: ../ft_ls.h
+CMakeFiles/FT_LS.dir/f_count_files_in_print.c.o: ../nmizin_printf/ft_printf.h
+
+CMakeFiles/FT_LS.dir/f_error_order_.c.o: ../f_error_order_.c
+CMakeFiles/FT_LS.dir/f_error_order_.c.o: ../ft_ls.h
+CMakeFiles/FT_LS.dir/f_error_order_.c.o: ../nmizin_printf/ft_printf.h
 
 CMakeFiles/FT_LS.dir/f_flag_L_.c.o: ../f_flag_L_.c
 CMakeFiles/FT_LS.dir/f_flag_L_.c.o: ../ft_ls.h
+CMakeFiles/FT_LS.dir/f_flag_L_.c.o: ../nmizin_printf/ft_printf.h
 
 CMakeFiles/FT_LS.dir/f_flag_a_.c.o: ../f_flag_a_.c
 CMakeFiles/FT_LS.dir/f_flag_a_.c.o: ../ft_ls.h
+CMakeFiles/FT_LS.dir/f_flag_a_.c.o: ../nmizin_printf/ft_printf.h
 
 CMakeFiles/FT_LS.dir/f_get_arg_in_print.c.o: ../f_get_arg_in_print.c
 CMakeFiles/FT_LS.dir/f_get_arg_in_print.c.o: ../ft_ls.h
+CMakeFiles/FT_LS.dir/f_get_arg_in_print.c.o: ../nmizin_printf/ft_printf.h
 
 CMakeFiles/FT_LS.dir/f_get_files_from_argv.c.o: ../f_get_files_from_argv.c
 CMakeFiles/FT_LS.dir/f_get_files_from_argv.c.o: ../ft_ls.h
-
-CMakeFiles/FT_LS.dir/f_get_info.c.o: ../f_get_info.c
-CMakeFiles/FT_LS.dir/f_get_info.c.o: ../ft_ls.h
+CMakeFiles/FT_LS.dir/f_get_files_from_argv.c.o: ../nmizin_printf/ft_printf.h
 
 CMakeFiles/FT_LS.dir/f_get_length_param_.c.o: ../f_get_length_param_.c
 CMakeFiles/FT_LS.dir/f_get_length_param_.c.o: ../ft_ls.h
+CMakeFiles/FT_LS.dir/f_get_length_param_.c.o: ../nmizin_printf/ft_printf.h
 
 CMakeFiles/FT_LS.dir/f_init_get_file_struct.c.o: ../f_init_get_file_struct.c
 CMakeFiles/FT_LS.dir/f_init_get_file_struct.c.o: ../ft_ls.h
+CMakeFiles/FT_LS.dir/f_init_get_file_struct.c.o: ../nmizin_printf/ft_printf.h
+
+CMakeFiles/FT_LS.dir/f_initialize_flags.c.o: ../f_initialize_flags.c
+CMakeFiles/FT_LS.dir/f_initialize_flags.c.o: ../ft_ls.h
+CMakeFiles/FT_LS.dir/f_initialize_flags.c.o: ../nmizin_printf/ft_printf.h
 
 CMakeFiles/FT_LS.dir/f_initialize_struct.c.o: ../f_initialize_struct.c
 CMakeFiles/FT_LS.dir/f_initialize_struct.c.o: ../ft_ls.h
+CMakeFiles/FT_LS.dir/f_initialize_struct.c.o: ../nmizin_printf/ft_printf.h
 
 CMakeFiles/FT_LS.dir/f_link_uid_gid_t_.c.o: ../f_link_uid_gid_t_.c
 CMakeFiles/FT_LS.dir/f_link_uid_gid_t_.c.o: ../ft_ls.h
+CMakeFiles/FT_LS.dir/f_link_uid_gid_t_.c.o: ../nmizin_printf/ft_printf.h
 
 CMakeFiles/FT_LS.dir/f_ls_join_free.c.o: ../f_ls_join_free.c
 CMakeFiles/FT_LS.dir/f_ls_join_free.c.o: ../ft_ls.h
+CMakeFiles/FT_LS.dir/f_ls_join_free.c.o: ../nmizin_printf/ft_printf.h
 
 CMakeFiles/FT_LS.dir/f_ls_str_length.c.o: ../f_ls_str_length.c
 CMakeFiles/FT_LS.dir/f_ls_str_length.c.o: ../ft_ls.h
+CMakeFiles/FT_LS.dir/f_ls_str_length.c.o: ../nmizin_printf/ft_printf.h
 
 CMakeFiles/FT_LS.dir/f_ls_strcmp.c.o: ../f_ls_strcmp.c
 
 CMakeFiles/FT_LS.dir/f_ls_strdup.c.o: ../f_ls_strdup.c
 CMakeFiles/FT_LS.dir/f_ls_strdup.c.o: ../ft_ls.h
+CMakeFiles/FT_LS.dir/f_ls_strdup.c.o: ../nmizin_printf/ft_printf.h
 
 CMakeFiles/FT_LS.dir/f_memmaloc.c.o: ../f_memmaloc.c
 CMakeFiles/FT_LS.dir/f_memmaloc.c.o: ../ft_ls.h
+CMakeFiles/FT_LS.dir/f_memmaloc.c.o: ../nmizin_printf/ft_printf.h
 
 CMakeFiles/FT_LS.dir/f_num_size_.c.o: ../f_num_size_.c
 CMakeFiles/FT_LS.dir/f_num_size_.c.o: ../ft_ls.h
+CMakeFiles/FT_LS.dir/f_num_size_.c.o: ../nmizin_printf/ft_printf.h
 
 CMakeFiles/FT_LS.dir/f_order_a_z.c.o: ../f_order_a_z.c
 CMakeFiles/FT_LS.dir/f_order_a_z.c.o: ../ft_ls.h
+CMakeFiles/FT_LS.dir/f_order_a_z.c.o: ../nmizin_printf/ft_printf.h
+
+CMakeFiles/FT_LS.dir/f_permis_denied_.c.o: ../f_permis_denied_.c
+CMakeFiles/FT_LS.dir/f_permis_denied_.c.o: ../ft_ls.h
+CMakeFiles/FT_LS.dir/f_permis_denied_.c.o: ../nmizin_printf/ft_printf.h
 
 CMakeFiles/FT_LS.dir/f_print_.c.o: ../f_print_.c
 CMakeFiles/FT_LS.dir/f_print_.c.o: ../ft_ls.h
-
-CMakeFiles/FT_LS.dir/f_print_files.c.o: ../nmizin_printf/ft_printf.h
-CMakeFiles/FT_LS.dir/f_print_files.c.o: ../f_print_files.c
-CMakeFiles/FT_LS.dir/f_print_files.c.o: ../ft_ls.h
+CMakeFiles/FT_LS.dir/f_print_.c.o: ../nmizin_printf/ft_printf.h
 
 CMakeFiles/FT_LS.dir/f_print_only_ls.c.o: ../f_print_only_ls.c
 CMakeFiles/FT_LS.dir/f_print_only_ls.c.o: ../ft_ls.h
+CMakeFiles/FT_LS.dir/f_print_only_ls.c.o: ../nmizin_printf/ft_printf.h
 
 CMakeFiles/FT_LS.dir/f_reset_variables.c.o: ../f_reset_variables.c
 CMakeFiles/FT_LS.dir/f_reset_variables.c.o: ../ft_ls.h
+CMakeFiles/FT_LS.dir/f_reset_variables.c.o: ../nmizin_printf/ft_printf.h
 
 CMakeFiles/FT_LS.dir/f_spl.c.o: ../f_spl.c
 CMakeFiles/FT_LS.dir/f_spl.c.o: ../ft_ls.h
+CMakeFiles/FT_LS.dir/f_spl.c.o: ../nmizin_printf/ft_printf.h
 
 CMakeFiles/FT_LS.dir/main.c.o: ../ft_ls.h
 CMakeFiles/FT_LS.dir/main.c.o: ../main.c

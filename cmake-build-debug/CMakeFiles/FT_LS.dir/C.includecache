@@ -6,26 +6,6 @@
 
 #IncludeRegexTransform: 
 
-../nmizin_printf/ft_printf.h
-string.h
--
-stdlib.h
--
-unistd.h
--
-stdarg.h
--
-locale.h
--
-wchar.h
--
-limits.h
-../nmizin_printf/limits.h
-stdint.h
--
-sys/types.h
--
-
 /Users/nmizin/CLionProjects/FT_LS/f_bzero.c
 ft_ls.h
 /Users/nmizin/CLionProjects/FT_LS/ft_ls.h
@@ -33,10 +13,12 @@ ft_ls.h
 /Users/nmizin/CLionProjects/FT_LS/f_check_argv.c
 ft_ls.h
 /Users/nmizin/CLionProjects/FT_LS/ft_ls.h
-ft_printf.h
-/Users/nmizin/CLionProjects/FT_LS/ft_printf.h
 
 /Users/nmizin/CLionProjects/FT_LS/f_count_files_in_print.c
+ft_ls.h
+/Users/nmizin/CLionProjects/FT_LS/ft_ls.h
+
+/Users/nmizin/CLionProjects/FT_LS/f_error_order_.c
 ft_ls.h
 /Users/nmizin/CLionProjects/FT_LS/ft_ls.h
 
@@ -56,15 +38,15 @@ ft_ls.h
 ft_ls.h
 /Users/nmizin/CLionProjects/FT_LS/ft_ls.h
 
-/Users/nmizin/CLionProjects/FT_LS/f_get_info.c
-ft_ls.h
-/Users/nmizin/CLionProjects/FT_LS/ft_ls.h
-
 /Users/nmizin/CLionProjects/FT_LS/f_get_length_param_.c
 ft_ls.h
 /Users/nmizin/CLionProjects/FT_LS/ft_ls.h
 
 /Users/nmizin/CLionProjects/FT_LS/f_init_get_file_struct.c
+ft_ls.h
+/Users/nmizin/CLionProjects/FT_LS/ft_ls.h
+
+/Users/nmizin/CLionProjects/FT_LS/f_initialize_flags.c
 ft_ls.h
 /Users/nmizin/CLionProjects/FT_LS/ft_ls.h
 
@@ -102,15 +84,13 @@ ft_ls.h
 ft_ls.h
 /Users/nmizin/CLionProjects/FT_LS/ft_ls.h
 
-/Users/nmizin/CLionProjects/FT_LS/f_print_.c
+/Users/nmizin/CLionProjects/FT_LS/f_permis_denied_.c
 ft_ls.h
 /Users/nmizin/CLionProjects/FT_LS/ft_ls.h
 
-/Users/nmizin/CLionProjects/FT_LS/f_print_files.c
+/Users/nmizin/CLionProjects/FT_LS/f_print_.c
 ft_ls.h
 /Users/nmizin/CLionProjects/FT_LS/ft_ls.h
-ft_printf.h
-/Users/nmizin/CLionProjects/FT_LS/ft_printf.h
 
 /Users/nmizin/CLionProjects/FT_LS/f_print_only_ls.c
 ft_ls.h
@@ -127,6 +107,8 @@ ft_ls.h
 /Users/nmizin/CLionProjects/FT_LS/ft_ls.h
 dirent.h
 -
+nmizin_printf/ft_printf.h
+/Users/nmizin/CLionProjects/FT_LS/nmizin_printf/ft_printf.h
 sys/stat.h
 -
 sys/types.h
@@ -167,22 +149,12 @@ limits.h
 -
 zconf.h
 -
+sys/ioctl.h
+-
 
 /Users/nmizin/CLionProjects/FT_LS/main.c
-stdio.h
--
-stdbool.h
--
-fcntl.h
--
-assert.h
--
-locale.h
--
 ft_ls.h
 /Users/nmizin/CLionProjects/FT_LS/ft_ls.h
-nmizin_printf/ft_printf.h
-/Users/nmizin/CLionProjects/FT_LS/nmizin_printf/ft_printf.h
 
 /Users/nmizin/CLionProjects/FT_LS/nmizin_printf/f_check.c
 ft_printf.h

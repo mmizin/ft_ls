@@ -204,6 +204,33 @@ f_count_files_in_print.c.s:
 	$(MAKE) -f CMakeFiles/FT_LS.dir/build.make CMakeFiles/FT_LS.dir/f_count_files_in_print.c.s
 .PHONY : f_count_files_in_print.c.s
 
+f_error_order_.o: f_error_order_.c.o
+
+.PHONY : f_error_order_.o
+
+# target to build an object file
+f_error_order_.c.o:
+	$(MAKE) -f CMakeFiles/FT_LS.dir/build.make CMakeFiles/FT_LS.dir/f_error_order_.c.o
+.PHONY : f_error_order_.c.o
+
+f_error_order_.i: f_error_order_.c.i
+
+.PHONY : f_error_order_.i
+
+# target to preprocess a source file
+f_error_order_.c.i:
+	$(MAKE) -f CMakeFiles/FT_LS.dir/build.make CMakeFiles/FT_LS.dir/f_error_order_.c.i
+.PHONY : f_error_order_.c.i
+
+f_error_order_.s: f_error_order_.c.s
+
+.PHONY : f_error_order_.s
+
+# target to generate assembly for a file
+f_error_order_.c.s:
+	$(MAKE) -f CMakeFiles/FT_LS.dir/build.make CMakeFiles/FT_LS.dir/f_error_order_.c.s
+.PHONY : f_error_order_.c.s
+
 f_flag_L_.o: f_flag_L_.c.o
 
 .PHONY : f_flag_L_.o
@@ -312,33 +339,6 @@ f_get_files_from_argv.c.s:
 	$(MAKE) -f CMakeFiles/FT_LS.dir/build.make CMakeFiles/FT_LS.dir/f_get_files_from_argv.c.s
 .PHONY : f_get_files_from_argv.c.s
 
-f_get_info.o: f_get_info.c.o
-
-.PHONY : f_get_info.o
-
-# target to build an object file
-f_get_info.c.o:
-	$(MAKE) -f CMakeFiles/FT_LS.dir/build.make CMakeFiles/FT_LS.dir/f_get_info.c.o
-.PHONY : f_get_info.c.o
-
-f_get_info.i: f_get_info.c.i
-
-.PHONY : f_get_info.i
-
-# target to preprocess a source file
-f_get_info.c.i:
-	$(MAKE) -f CMakeFiles/FT_LS.dir/build.make CMakeFiles/FT_LS.dir/f_get_info.c.i
-.PHONY : f_get_info.c.i
-
-f_get_info.s: f_get_info.c.s
-
-.PHONY : f_get_info.s
-
-# target to generate assembly for a file
-f_get_info.c.s:
-	$(MAKE) -f CMakeFiles/FT_LS.dir/build.make CMakeFiles/FT_LS.dir/f_get_info.c.s
-.PHONY : f_get_info.c.s
-
 f_get_length_param_.o: f_get_length_param_.c.o
 
 .PHONY : f_get_length_param_.o
@@ -366,6 +366,33 @@ f_get_length_param_.c.s:
 	$(MAKE) -f CMakeFiles/FT_LS.dir/build.make CMakeFiles/FT_LS.dir/f_get_length_param_.c.s
 .PHONY : f_get_length_param_.c.s
 
+f_get_tty_.o: f_get_tty_.c.o
+
+.PHONY : f_get_tty_.o
+
+# target to build an object file
+f_get_tty_.c.o:
+	$(MAKE) -f CMakeFiles/FT_LS.dir/build.make CMakeFiles/FT_LS.dir/f_get_tty_.c.o
+.PHONY : f_get_tty_.c.o
+
+f_get_tty_.i: f_get_tty_.c.i
+
+.PHONY : f_get_tty_.i
+
+# target to preprocess a source file
+f_get_tty_.c.i:
+	$(MAKE) -f CMakeFiles/FT_LS.dir/build.make CMakeFiles/FT_LS.dir/f_get_tty_.c.i
+.PHONY : f_get_tty_.c.i
+
+f_get_tty_.s: f_get_tty_.c.s
+
+.PHONY : f_get_tty_.s
+
+# target to generate assembly for a file
+f_get_tty_.c.s:
+	$(MAKE) -f CMakeFiles/FT_LS.dir/build.make CMakeFiles/FT_LS.dir/f_get_tty_.c.s
+.PHONY : f_get_tty_.c.s
+
 f_init_get_file_struct.o: f_init_get_file_struct.c.o
 
 .PHONY : f_init_get_file_struct.o
@@ -392,6 +419,33 @@ f_init_get_file_struct.s: f_init_get_file_struct.c.s
 f_init_get_file_struct.c.s:
 	$(MAKE) -f CMakeFiles/FT_LS.dir/build.make CMakeFiles/FT_LS.dir/f_init_get_file_struct.c.s
 .PHONY : f_init_get_file_struct.c.s
+
+f_initialize_flags.o: f_initialize_flags.c.o
+
+.PHONY : f_initialize_flags.o
+
+# target to build an object file
+f_initialize_flags.c.o:
+	$(MAKE) -f CMakeFiles/FT_LS.dir/build.make CMakeFiles/FT_LS.dir/f_initialize_flags.c.o
+.PHONY : f_initialize_flags.c.o
+
+f_initialize_flags.i: f_initialize_flags.c.i
+
+.PHONY : f_initialize_flags.i
+
+# target to preprocess a source file
+f_initialize_flags.c.i:
+	$(MAKE) -f CMakeFiles/FT_LS.dir/build.make CMakeFiles/FT_LS.dir/f_initialize_flags.c.i
+.PHONY : f_initialize_flags.c.i
+
+f_initialize_flags.s: f_initialize_flags.c.s
+
+.PHONY : f_initialize_flags.s
+
+# target to generate assembly for a file
+f_initialize_flags.c.s:
+	$(MAKE) -f CMakeFiles/FT_LS.dir/build.make CMakeFiles/FT_LS.dir/f_initialize_flags.c.s
+.PHONY : f_initialize_flags.c.s
 
 f_initialize_struct.o: f_initialize_struct.c.o
 
@@ -609,6 +663,33 @@ f_num_size_.c.s:
 	$(MAKE) -f CMakeFiles/FT_LS.dir/build.make CMakeFiles/FT_LS.dir/f_num_size_.c.s
 .PHONY : f_num_size_.c.s
 
+f_o_g_p_permissions_.o: f_o_g_p_permissions_.c.o
+
+.PHONY : f_o_g_p_permissions_.o
+
+# target to build an object file
+f_o_g_p_permissions_.c.o:
+	$(MAKE) -f CMakeFiles/FT_LS.dir/build.make CMakeFiles/FT_LS.dir/f_o_g_p_permissions_.c.o
+.PHONY : f_o_g_p_permissions_.c.o
+
+f_o_g_p_permissions_.i: f_o_g_p_permissions_.c.i
+
+.PHONY : f_o_g_p_permissions_.i
+
+# target to preprocess a source file
+f_o_g_p_permissions_.c.i:
+	$(MAKE) -f CMakeFiles/FT_LS.dir/build.make CMakeFiles/FT_LS.dir/f_o_g_p_permissions_.c.i
+.PHONY : f_o_g_p_permissions_.c.i
+
+f_o_g_p_permissions_.s: f_o_g_p_permissions_.c.s
+
+.PHONY : f_o_g_p_permissions_.s
+
+# target to generate assembly for a file
+f_o_g_p_permissions_.c.s:
+	$(MAKE) -f CMakeFiles/FT_LS.dir/build.make CMakeFiles/FT_LS.dir/f_o_g_p_permissions_.c.s
+.PHONY : f_o_g_p_permissions_.c.s
+
 f_order_a_z.o: f_order_a_z.c.o
 
 .PHONY : f_order_a_z.o
@@ -636,6 +717,33 @@ f_order_a_z.c.s:
 	$(MAKE) -f CMakeFiles/FT_LS.dir/build.make CMakeFiles/FT_LS.dir/f_order_a_z.c.s
 .PHONY : f_order_a_z.c.s
 
+f_permis_denied_.o: f_permis_denied_.c.o
+
+.PHONY : f_permis_denied_.o
+
+# target to build an object file
+f_permis_denied_.c.o:
+	$(MAKE) -f CMakeFiles/FT_LS.dir/build.make CMakeFiles/FT_LS.dir/f_permis_denied_.c.o
+.PHONY : f_permis_denied_.c.o
+
+f_permis_denied_.i: f_permis_denied_.c.i
+
+.PHONY : f_permis_denied_.i
+
+# target to preprocess a source file
+f_permis_denied_.c.i:
+	$(MAKE) -f CMakeFiles/FT_LS.dir/build.make CMakeFiles/FT_LS.dir/f_permis_denied_.c.i
+.PHONY : f_permis_denied_.c.i
+
+f_permis_denied_.s: f_permis_denied_.c.s
+
+.PHONY : f_permis_denied_.s
+
+# target to generate assembly for a file
+f_permis_denied_.c.s:
+	$(MAKE) -f CMakeFiles/FT_LS.dir/build.make CMakeFiles/FT_LS.dir/f_permis_denied_.c.s
+.PHONY : f_permis_denied_.c.s
+
 f_print_.o: f_print_.c.o
 
 .PHONY : f_print_.o
@@ -662,33 +770,6 @@ f_print_.s: f_print_.c.s
 f_print_.c.s:
 	$(MAKE) -f CMakeFiles/FT_LS.dir/build.make CMakeFiles/FT_LS.dir/f_print_.c.s
 .PHONY : f_print_.c.s
-
-f_print_files.o: f_print_files.c.o
-
-.PHONY : f_print_files.o
-
-# target to build an object file
-f_print_files.c.o:
-	$(MAKE) -f CMakeFiles/FT_LS.dir/build.make CMakeFiles/FT_LS.dir/f_print_files.c.o
-.PHONY : f_print_files.c.o
-
-f_print_files.i: f_print_files.c.i
-
-.PHONY : f_print_files.i
-
-# target to preprocess a source file
-f_print_files.c.i:
-	$(MAKE) -f CMakeFiles/FT_LS.dir/build.make CMakeFiles/FT_LS.dir/f_print_files.c.i
-.PHONY : f_print_files.c.i
-
-f_print_files.s: f_print_files.c.s
-
-.PHONY : f_print_files.s
-
-# target to generate assembly for a file
-f_print_files.c.s:
-	$(MAKE) -f CMakeFiles/FT_LS.dir/build.make CMakeFiles/FT_LS.dir/f_print_files.c.s
-.PHONY : f_print_files.c.s
 
 f_print_only_ls.o: f_print_only_ls.c.o
 
@@ -1518,6 +1599,9 @@ help:
 	@echo "... f_count_files_in_print.o"
 	@echo "... f_count_files_in_print.i"
 	@echo "... f_count_files_in_print.s"
+	@echo "... f_error_order_.o"
+	@echo "... f_error_order_.i"
+	@echo "... f_error_order_.s"
 	@echo "... f_flag_L_.o"
 	@echo "... f_flag_L_.i"
 	@echo "... f_flag_L_.s"
@@ -1530,15 +1614,18 @@ help:
 	@echo "... f_get_files_from_argv.o"
 	@echo "... f_get_files_from_argv.i"
 	@echo "... f_get_files_from_argv.s"
-	@echo "... f_get_info.o"
-	@echo "... f_get_info.i"
-	@echo "... f_get_info.s"
 	@echo "... f_get_length_param_.o"
 	@echo "... f_get_length_param_.i"
 	@echo "... f_get_length_param_.s"
+	@echo "... f_get_tty_.o"
+	@echo "... f_get_tty_.i"
+	@echo "... f_get_tty_.s"
 	@echo "... f_init_get_file_struct.o"
 	@echo "... f_init_get_file_struct.i"
 	@echo "... f_init_get_file_struct.s"
+	@echo "... f_initialize_flags.o"
+	@echo "... f_initialize_flags.i"
+	@echo "... f_initialize_flags.s"
 	@echo "... f_initialize_struct.o"
 	@echo "... f_initialize_struct.i"
 	@echo "... f_initialize_struct.s"
@@ -1563,15 +1650,18 @@ help:
 	@echo "... f_num_size_.o"
 	@echo "... f_num_size_.i"
 	@echo "... f_num_size_.s"
+	@echo "... f_o_g_p_permissions_.o"
+	@echo "... f_o_g_p_permissions_.i"
+	@echo "... f_o_g_p_permissions_.s"
 	@echo "... f_order_a_z.o"
 	@echo "... f_order_a_z.i"
 	@echo "... f_order_a_z.s"
+	@echo "... f_permis_denied_.o"
+	@echo "... f_permis_denied_.i"
+	@echo "... f_permis_denied_.s"
 	@echo "... f_print_.o"
 	@echo "... f_print_.i"
 	@echo "... f_print_.s"
-	@echo "... f_print_files.o"
-	@echo "... f_print_files.i"
-	@echo "... f_print_files.s"
 	@echo "... f_print_only_ls.o"
 	@echo "... f_print_only_ls.i"
 	@echo "... f_print_only_ls.s"

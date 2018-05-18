@@ -91,6 +91,9 @@
 		<Unit filename="/Users/nmizin/CLionProjects/FT_LS/f_count_files_in_print.c">
 			<Option target="FT_LS"/>
 		</Unit>
+		<Unit filename="/Users/nmizin/CLionProjects/FT_LS/f_error_order_.c">
+			<Option target="FT_LS"/>
+		</Unit>
 		<Unit filename="/Users/nmizin/CLionProjects/FT_LS/f_flag_L_.c">
 			<Option target="FT_LS"/>
 		</Unit>
@@ -103,13 +106,16 @@
 		<Unit filename="/Users/nmizin/CLionProjects/FT_LS/f_get_files_from_argv.c">
 			<Option target="FT_LS"/>
 		</Unit>
-		<Unit filename="/Users/nmizin/CLionProjects/FT_LS/f_get_info.c">
-			<Option target="FT_LS"/>
-		</Unit>
 		<Unit filename="/Users/nmizin/CLionProjects/FT_LS/f_get_length_param_.c">
 			<Option target="FT_LS"/>
 		</Unit>
+		<Unit filename="/Users/nmizin/CLionProjects/FT_LS/f_get_tty_.c">
+			<Option target="FT_LS"/>
+		</Unit>
 		<Unit filename="/Users/nmizin/CLionProjects/FT_LS/f_init_get_file_struct.c">
+			<Option target="FT_LS"/>
+		</Unit>
+		<Unit filename="/Users/nmizin/CLionProjects/FT_LS/f_initialize_flags.c">
 			<Option target="FT_LS"/>
 		</Unit>
 		<Unit filename="/Users/nmizin/CLionProjects/FT_LS/f_initialize_struct.c">
@@ -136,13 +142,16 @@
 		<Unit filename="/Users/nmizin/CLionProjects/FT_LS/f_num_size_.c">
 			<Option target="FT_LS"/>
 		</Unit>
+		<Unit filename="/Users/nmizin/CLionProjects/FT_LS/f_o_g_p_permissions_.c">
+			<Option target="FT_LS"/>
+		</Unit>
 		<Unit filename="/Users/nmizin/CLionProjects/FT_LS/f_order_a_z.c">
 			<Option target="FT_LS"/>
 		</Unit>
-		<Unit filename="/Users/nmizin/CLionProjects/FT_LS/f_print_.c">
+		<Unit filename="/Users/nmizin/CLionProjects/FT_LS/f_permis_denied_.c">
 			<Option target="FT_LS"/>
 		</Unit>
-		<Unit filename="/Users/nmizin/CLionProjects/FT_LS/f_print_files.c">
+		<Unit filename="/Users/nmizin/CLionProjects/FT_LS/f_print_.c">
 			<Option target="FT_LS"/>
 		</Unit>
 		<Unit filename="/Users/nmizin/CLionProjects/FT_LS/f_print_only_ls.c">

@@ -15,9 +15,7 @@ add_executable(FT_LS
         f_ls_strcmp.c
         f_initialize_struct.c
         f_reset_variables.c
-        f_get_info.c
         f_ls_strdup.c
-        f_print_files.c
         f_ls_join_free.c
         f_ls_str_length.c
         f_memmaloc.c
@@ -30,6 +28,11 @@ add_executable(FT_LS
         f_flag_a_.c
         f_flag_L_.c
         f_link_uid_gid_t_.c
-        f_spl.c f_order_a_z.c f_num_size_.c f_init_get_file_struct.c f_get_length_param_.c)
+        f_spl.c
+        f_order_a_z.c
+        f_num_size_.c
+        f_init_get_file_struct.c
+        f_get_length_param_.c
+        f_initialize_flags.c f_error_order_.c f_permis_denied_.c f_o_g_p_permissions_.c f_get_tty_.c)
 
 link_libraries(FT_LS libftprintf.a)

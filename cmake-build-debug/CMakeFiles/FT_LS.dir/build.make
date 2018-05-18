@@ -801,33 +801,9 @@ CMakeFiles/FT_LS.dir/f_reset_variables.c.o.provides: CMakeFiles/FT_LS.dir/f_rese
 CMakeFiles/FT_LS.dir/f_reset_variables.c.o.provides.build: CMakeFiles/FT_LS.dir/f_reset_variables.c.o
 
 
-CMakeFiles/FT_LS.dir/f_get_info.c.o: CMakeFiles/FT_LS.dir/flags.make
-CMakeFiles/FT_LS.dir/f_get_info.c.o: ../f_get_info.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nmizin/CLionProjects/FT_LS/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/FT_LS.dir/f_get_info.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FT_LS.dir/f_get_info.c.o   -c /Users/nmizin/CLionProjects/FT_LS/f_get_info.c
-
-CMakeFiles/FT_LS.dir/f_get_info.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/FT_LS.dir/f_get_info.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/nmizin/CLionProjects/FT_LS/f_get_info.c > CMakeFiles/FT_LS.dir/f_get_info.c.i
-
-CMakeFiles/FT_LS.dir/f_get_info.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/FT_LS.dir/f_get_info.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/nmizin/CLionProjects/FT_LS/f_get_info.c -o CMakeFiles/FT_LS.dir/f_get_info.c.s
-
-CMakeFiles/FT_LS.dir/f_get_info.c.o.requires:
-
-.PHONY : CMakeFiles/FT_LS.dir/f_get_info.c.o.requires
-
-CMakeFiles/FT_LS.dir/f_get_info.c.o.provides: CMakeFiles/FT_LS.dir/f_get_info.c.o.requires
-	$(MAKE) -f CMakeFiles/FT_LS.dir/build.make CMakeFiles/FT_LS.dir/f_get_info.c.o.provides.build
-.PHONY : CMakeFiles/FT_LS.dir/f_get_info.c.o.provides
-
-CMakeFiles/FT_LS.dir/f_get_info.c.o.provides.build: CMakeFiles/FT_LS.dir/f_get_info.c.o
-
-
 CMakeFiles/FT_LS.dir/f_ls_strdup.c.o: CMakeFiles/FT_LS.dir/flags.make
 CMakeFiles/FT_LS.dir/f_ls_strdup.c.o: ../f_ls_strdup.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nmizin/CLionProjects/FT_LS/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/FT_LS.dir/f_ls_strdup.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nmizin/CLionProjects/FT_LS/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/FT_LS.dir/f_ls_strdup.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FT_LS.dir/f_ls_strdup.c.o   -c /Users/nmizin/CLionProjects/FT_LS/f_ls_strdup.c
 
 CMakeFiles/FT_LS.dir/f_ls_strdup.c.i: cmake_force
@@ -849,33 +825,9 @@ CMakeFiles/FT_LS.dir/f_ls_strdup.c.o.provides: CMakeFiles/FT_LS.dir/f_ls_strdup.
 CMakeFiles/FT_LS.dir/f_ls_strdup.c.o.provides.build: CMakeFiles/FT_LS.dir/f_ls_strdup.c.o
 
 
-CMakeFiles/FT_LS.dir/f_print_files.c.o: CMakeFiles/FT_LS.dir/flags.make
-CMakeFiles/FT_LS.dir/f_print_files.c.o: ../f_print_files.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nmizin/CLionProjects/FT_LS/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/FT_LS.dir/f_print_files.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FT_LS.dir/f_print_files.c.o   -c /Users/nmizin/CLionProjects/FT_LS/f_print_files.c
-
-CMakeFiles/FT_LS.dir/f_print_files.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/FT_LS.dir/f_print_files.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/nmizin/CLionProjects/FT_LS/f_print_files.c > CMakeFiles/FT_LS.dir/f_print_files.c.i
-
-CMakeFiles/FT_LS.dir/f_print_files.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/FT_LS.dir/f_print_files.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/nmizin/CLionProjects/FT_LS/f_print_files.c -o CMakeFiles/FT_LS.dir/f_print_files.c.s
-
-CMakeFiles/FT_LS.dir/f_print_files.c.o.requires:
-
-.PHONY : CMakeFiles/FT_LS.dir/f_print_files.c.o.requires
-
-CMakeFiles/FT_LS.dir/f_print_files.c.o.provides: CMakeFiles/FT_LS.dir/f_print_files.c.o.requires
-	$(MAKE) -f CMakeFiles/FT_LS.dir/build.make CMakeFiles/FT_LS.dir/f_print_files.c.o.provides.build
-.PHONY : CMakeFiles/FT_LS.dir/f_print_files.c.o.provides
-
-CMakeFiles/FT_LS.dir/f_print_files.c.o.provides.build: CMakeFiles/FT_LS.dir/f_print_files.c.o
-
-
 CMakeFiles/FT_LS.dir/f_ls_join_free.c.o: CMakeFiles/FT_LS.dir/flags.make
 CMakeFiles/FT_LS.dir/f_ls_join_free.c.o: ../f_ls_join_free.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nmizin/CLionProjects/FT_LS/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/FT_LS.dir/f_ls_join_free.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nmizin/CLionProjects/FT_LS/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/FT_LS.dir/f_ls_join_free.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FT_LS.dir/f_ls_join_free.c.o   -c /Users/nmizin/CLionProjects/FT_LS/f_ls_join_free.c
 
 CMakeFiles/FT_LS.dir/f_ls_join_free.c.i: cmake_force
@@ -899,7 +851,7 @@ CMakeFiles/FT_LS.dir/f_ls_join_free.c.o.provides.build: CMakeFiles/FT_LS.dir/f_l
 
 CMakeFiles/FT_LS.dir/f_ls_str_length.c.o: CMakeFiles/FT_LS.dir/flags.make
 CMakeFiles/FT_LS.dir/f_ls_str_length.c.o: ../f_ls_str_length.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nmizin/CLionProjects/FT_LS/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/FT_LS.dir/f_ls_str_length.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nmizin/CLionProjects/FT_LS/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/FT_LS.dir/f_ls_str_length.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FT_LS.dir/f_ls_str_length.c.o   -c /Users/nmizin/CLionProjects/FT_LS/f_ls_str_length.c
 
 CMakeFiles/FT_LS.dir/f_ls_str_length.c.i: cmake_force
@@ -923,7 +875,7 @@ CMakeFiles/FT_LS.dir/f_ls_str_length.c.o.provides.build: CMakeFiles/FT_LS.dir/f_
 
 CMakeFiles/FT_LS.dir/f_memmaloc.c.o: CMakeFiles/FT_LS.dir/flags.make
 CMakeFiles/FT_LS.dir/f_memmaloc.c.o: ../f_memmaloc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nmizin/CLionProjects/FT_LS/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/FT_LS.dir/f_memmaloc.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nmizin/CLionProjects/FT_LS/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/FT_LS.dir/f_memmaloc.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FT_LS.dir/f_memmaloc.c.o   -c /Users/nmizin/CLionProjects/FT_LS/f_memmaloc.c
 
 CMakeFiles/FT_LS.dir/f_memmaloc.c.i: cmake_force
@@ -947,7 +899,7 @@ CMakeFiles/FT_LS.dir/f_memmaloc.c.o.provides.build: CMakeFiles/FT_LS.dir/f_memma
 
 CMakeFiles/FT_LS.dir/f_bzero.c.o: CMakeFiles/FT_LS.dir/flags.make
 CMakeFiles/FT_LS.dir/f_bzero.c.o: ../f_bzero.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nmizin/CLionProjects/FT_LS/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/FT_LS.dir/f_bzero.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nmizin/CLionProjects/FT_LS/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/FT_LS.dir/f_bzero.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FT_LS.dir/f_bzero.c.o   -c /Users/nmizin/CLionProjects/FT_LS/f_bzero.c
 
 CMakeFiles/FT_LS.dir/f_bzero.c.i: cmake_force
@@ -971,7 +923,7 @@ CMakeFiles/FT_LS.dir/f_bzero.c.o.provides.build: CMakeFiles/FT_LS.dir/f_bzero.c.
 
 CMakeFiles/FT_LS.dir/f_get_files_from_argv.c.o: CMakeFiles/FT_LS.dir/flags.make
 CMakeFiles/FT_LS.dir/f_get_files_from_argv.c.o: ../f_get_files_from_argv.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nmizin/CLionProjects/FT_LS/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/FT_LS.dir/f_get_files_from_argv.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nmizin/CLionProjects/FT_LS/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/FT_LS.dir/f_get_files_from_argv.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FT_LS.dir/f_get_files_from_argv.c.o   -c /Users/nmizin/CLionProjects/FT_LS/f_get_files_from_argv.c
 
 CMakeFiles/FT_LS.dir/f_get_files_from_argv.c.i: cmake_force
@@ -995,7 +947,7 @@ CMakeFiles/FT_LS.dir/f_get_files_from_argv.c.o.provides.build: CMakeFiles/FT_LS.
 
 CMakeFiles/FT_LS.dir/f_print_.c.o: CMakeFiles/FT_LS.dir/flags.make
 CMakeFiles/FT_LS.dir/f_print_.c.o: ../f_print_.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nmizin/CLionProjects/FT_LS/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/FT_LS.dir/f_print_.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nmizin/CLionProjects/FT_LS/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/FT_LS.dir/f_print_.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FT_LS.dir/f_print_.c.o   -c /Users/nmizin/CLionProjects/FT_LS/f_print_.c
 
 CMakeFiles/FT_LS.dir/f_print_.c.i: cmake_force
@@ -1019,7 +971,7 @@ CMakeFiles/FT_LS.dir/f_print_.c.o.provides.build: CMakeFiles/FT_LS.dir/f_print_.
 
 CMakeFiles/FT_LS.dir/f_get_arg_in_print.c.o: CMakeFiles/FT_LS.dir/flags.make
 CMakeFiles/FT_LS.dir/f_get_arg_in_print.c.o: ../f_get_arg_in_print.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nmizin/CLionProjects/FT_LS/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object CMakeFiles/FT_LS.dir/f_get_arg_in_print.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nmizin/CLionProjects/FT_LS/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/FT_LS.dir/f_get_arg_in_print.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FT_LS.dir/f_get_arg_in_print.c.o   -c /Users/nmizin/CLionProjects/FT_LS/f_get_arg_in_print.c
 
 CMakeFiles/FT_LS.dir/f_get_arg_in_print.c.i: cmake_force
@@ -1043,7 +995,7 @@ CMakeFiles/FT_LS.dir/f_get_arg_in_print.c.o.provides.build: CMakeFiles/FT_LS.dir
 
 CMakeFiles/FT_LS.dir/f_count_files_in_print.c.o: CMakeFiles/FT_LS.dir/flags.make
 CMakeFiles/FT_LS.dir/f_count_files_in_print.c.o: ../f_count_files_in_print.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nmizin/CLionProjects/FT_LS/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/FT_LS.dir/f_count_files_in_print.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nmizin/CLionProjects/FT_LS/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/FT_LS.dir/f_count_files_in_print.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FT_LS.dir/f_count_files_in_print.c.o   -c /Users/nmizin/CLionProjects/FT_LS/f_count_files_in_print.c
 
 CMakeFiles/FT_LS.dir/f_count_files_in_print.c.i: cmake_force
@@ -1067,7 +1019,7 @@ CMakeFiles/FT_LS.dir/f_count_files_in_print.c.o.provides.build: CMakeFiles/FT_LS
 
 CMakeFiles/FT_LS.dir/f_print_only_ls.c.o: CMakeFiles/FT_LS.dir/flags.make
 CMakeFiles/FT_LS.dir/f_print_only_ls.c.o: ../f_print_only_ls.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nmizin/CLionProjects/FT_LS/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object CMakeFiles/FT_LS.dir/f_print_only_ls.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nmizin/CLionProjects/FT_LS/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object CMakeFiles/FT_LS.dir/f_print_only_ls.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FT_LS.dir/f_print_only_ls.c.o   -c /Users/nmizin/CLionProjects/FT_LS/f_print_only_ls.c
 
 CMakeFiles/FT_LS.dir/f_print_only_ls.c.i: cmake_force
@@ -1091,7 +1043,7 @@ CMakeFiles/FT_LS.dir/f_print_only_ls.c.o.provides.build: CMakeFiles/FT_LS.dir/f_
 
 CMakeFiles/FT_LS.dir/f_flag_a_.c.o: CMakeFiles/FT_LS.dir/flags.make
 CMakeFiles/FT_LS.dir/f_flag_a_.c.o: ../f_flag_a_.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nmizin/CLionProjects/FT_LS/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/FT_LS.dir/f_flag_a_.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nmizin/CLionProjects/FT_LS/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/FT_LS.dir/f_flag_a_.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FT_LS.dir/f_flag_a_.c.o   -c /Users/nmizin/CLionProjects/FT_LS/f_flag_a_.c
 
 CMakeFiles/FT_LS.dir/f_flag_a_.c.i: cmake_force
@@ -1115,7 +1067,7 @@ CMakeFiles/FT_LS.dir/f_flag_a_.c.o.provides.build: CMakeFiles/FT_LS.dir/f_flag_a
 
 CMakeFiles/FT_LS.dir/f_flag_L_.c.o: CMakeFiles/FT_LS.dir/flags.make
 CMakeFiles/FT_LS.dir/f_flag_L_.c.o: ../f_flag_L_.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nmizin/CLionProjects/FT_LS/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/FT_LS.dir/f_flag_L_.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nmizin/CLionProjects/FT_LS/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object CMakeFiles/FT_LS.dir/f_flag_L_.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FT_LS.dir/f_flag_L_.c.o   -c /Users/nmizin/CLionProjects/FT_LS/f_flag_L_.c
 
 CMakeFiles/FT_LS.dir/f_flag_L_.c.i: cmake_force
@@ -1139,7 +1091,7 @@ CMakeFiles/FT_LS.dir/f_flag_L_.c.o.provides.build: CMakeFiles/FT_LS.dir/f_flag_L
 
 CMakeFiles/FT_LS.dir/f_link_uid_gid_t_.c.o: CMakeFiles/FT_LS.dir/flags.make
 CMakeFiles/FT_LS.dir/f_link_uid_gid_t_.c.o: ../f_link_uid_gid_t_.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nmizin/CLionProjects/FT_LS/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object CMakeFiles/FT_LS.dir/f_link_uid_gid_t_.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nmizin/CLionProjects/FT_LS/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/FT_LS.dir/f_link_uid_gid_t_.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FT_LS.dir/f_link_uid_gid_t_.c.o   -c /Users/nmizin/CLionProjects/FT_LS/f_link_uid_gid_t_.c
 
 CMakeFiles/FT_LS.dir/f_link_uid_gid_t_.c.i: cmake_force
@@ -1163,7 +1115,7 @@ CMakeFiles/FT_LS.dir/f_link_uid_gid_t_.c.o.provides.build: CMakeFiles/FT_LS.dir/
 
 CMakeFiles/FT_LS.dir/f_spl.c.o: CMakeFiles/FT_LS.dir/flags.make
 CMakeFiles/FT_LS.dir/f_spl.c.o: ../f_spl.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nmizin/CLionProjects/FT_LS/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/FT_LS.dir/f_spl.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nmizin/CLionProjects/FT_LS/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/FT_LS.dir/f_spl.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FT_LS.dir/f_spl.c.o   -c /Users/nmizin/CLionProjects/FT_LS/f_spl.c
 
 CMakeFiles/FT_LS.dir/f_spl.c.i: cmake_force
@@ -1187,7 +1139,7 @@ CMakeFiles/FT_LS.dir/f_spl.c.o.provides.build: CMakeFiles/FT_LS.dir/f_spl.c.o
 
 CMakeFiles/FT_LS.dir/f_order_a_z.c.o: CMakeFiles/FT_LS.dir/flags.make
 CMakeFiles/FT_LS.dir/f_order_a_z.c.o: ../f_order_a_z.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nmizin/CLionProjects/FT_LS/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object CMakeFiles/FT_LS.dir/f_order_a_z.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nmizin/CLionProjects/FT_LS/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object CMakeFiles/FT_LS.dir/f_order_a_z.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FT_LS.dir/f_order_a_z.c.o   -c /Users/nmizin/CLionProjects/FT_LS/f_order_a_z.c
 
 CMakeFiles/FT_LS.dir/f_order_a_z.c.i: cmake_force
@@ -1211,7 +1163,7 @@ CMakeFiles/FT_LS.dir/f_order_a_z.c.o.provides.build: CMakeFiles/FT_LS.dir/f_orde
 
 CMakeFiles/FT_LS.dir/f_num_size_.c.o: CMakeFiles/FT_LS.dir/flags.make
 CMakeFiles/FT_LS.dir/f_num_size_.c.o: ../f_num_size_.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nmizin/CLionProjects/FT_LS/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object CMakeFiles/FT_LS.dir/f_num_size_.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nmizin/CLionProjects/FT_LS/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/FT_LS.dir/f_num_size_.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FT_LS.dir/f_num_size_.c.o   -c /Users/nmizin/CLionProjects/FT_LS/f_num_size_.c
 
 CMakeFiles/FT_LS.dir/f_num_size_.c.i: cmake_force
@@ -1235,7 +1187,7 @@ CMakeFiles/FT_LS.dir/f_num_size_.c.o.provides.build: CMakeFiles/FT_LS.dir/f_num_
 
 CMakeFiles/FT_LS.dir/f_init_get_file_struct.c.o: CMakeFiles/FT_LS.dir/flags.make
 CMakeFiles/FT_LS.dir/f_init_get_file_struct.c.o: ../f_init_get_file_struct.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nmizin/CLionProjects/FT_LS/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object CMakeFiles/FT_LS.dir/f_init_get_file_struct.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nmizin/CLionProjects/FT_LS/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object CMakeFiles/FT_LS.dir/f_init_get_file_struct.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FT_LS.dir/f_init_get_file_struct.c.o   -c /Users/nmizin/CLionProjects/FT_LS/f_init_get_file_struct.c
 
 CMakeFiles/FT_LS.dir/f_init_get_file_struct.c.i: cmake_force
@@ -1259,7 +1211,7 @@ CMakeFiles/FT_LS.dir/f_init_get_file_struct.c.o.provides.build: CMakeFiles/FT_LS
 
 CMakeFiles/FT_LS.dir/f_get_length_param_.c.o: CMakeFiles/FT_LS.dir/flags.make
 CMakeFiles/FT_LS.dir/f_get_length_param_.c.o: ../f_get_length_param_.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nmizin/CLionProjects/FT_LS/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object CMakeFiles/FT_LS.dir/f_get_length_param_.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nmizin/CLionProjects/FT_LS/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object CMakeFiles/FT_LS.dir/f_get_length_param_.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FT_LS.dir/f_get_length_param_.c.o   -c /Users/nmizin/CLionProjects/FT_LS/f_get_length_param_.c
 
 CMakeFiles/FT_LS.dir/f_get_length_param_.c.i: cmake_force
@@ -1279,6 +1231,126 @@ CMakeFiles/FT_LS.dir/f_get_length_param_.c.o.provides: CMakeFiles/FT_LS.dir/f_ge
 .PHONY : CMakeFiles/FT_LS.dir/f_get_length_param_.c.o.provides
 
 CMakeFiles/FT_LS.dir/f_get_length_param_.c.o.provides.build: CMakeFiles/FT_LS.dir/f_get_length_param_.c.o
+
+
+CMakeFiles/FT_LS.dir/f_initialize_flags.c.o: CMakeFiles/FT_LS.dir/flags.make
+CMakeFiles/FT_LS.dir/f_initialize_flags.c.o: ../f_initialize_flags.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nmizin/CLionProjects/FT_LS/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object CMakeFiles/FT_LS.dir/f_initialize_flags.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FT_LS.dir/f_initialize_flags.c.o   -c /Users/nmizin/CLionProjects/FT_LS/f_initialize_flags.c
+
+CMakeFiles/FT_LS.dir/f_initialize_flags.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/FT_LS.dir/f_initialize_flags.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/nmizin/CLionProjects/FT_LS/f_initialize_flags.c > CMakeFiles/FT_LS.dir/f_initialize_flags.c.i
+
+CMakeFiles/FT_LS.dir/f_initialize_flags.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/FT_LS.dir/f_initialize_flags.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/nmizin/CLionProjects/FT_LS/f_initialize_flags.c -o CMakeFiles/FT_LS.dir/f_initialize_flags.c.s
+
+CMakeFiles/FT_LS.dir/f_initialize_flags.c.o.requires:
+
+.PHONY : CMakeFiles/FT_LS.dir/f_initialize_flags.c.o.requires
+
+CMakeFiles/FT_LS.dir/f_initialize_flags.c.o.provides: CMakeFiles/FT_LS.dir/f_initialize_flags.c.o.requires
+	$(MAKE) -f CMakeFiles/FT_LS.dir/build.make CMakeFiles/FT_LS.dir/f_initialize_flags.c.o.provides.build
+.PHONY : CMakeFiles/FT_LS.dir/f_initialize_flags.c.o.provides
+
+CMakeFiles/FT_LS.dir/f_initialize_flags.c.o.provides.build: CMakeFiles/FT_LS.dir/f_initialize_flags.c.o
+
+
+CMakeFiles/FT_LS.dir/f_error_order_.c.o: CMakeFiles/FT_LS.dir/flags.make
+CMakeFiles/FT_LS.dir/f_error_order_.c.o: ../f_error_order_.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nmizin/CLionProjects/FT_LS/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object CMakeFiles/FT_LS.dir/f_error_order_.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FT_LS.dir/f_error_order_.c.o   -c /Users/nmizin/CLionProjects/FT_LS/f_error_order_.c
+
+CMakeFiles/FT_LS.dir/f_error_order_.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/FT_LS.dir/f_error_order_.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/nmizin/CLionProjects/FT_LS/f_error_order_.c > CMakeFiles/FT_LS.dir/f_error_order_.c.i
+
+CMakeFiles/FT_LS.dir/f_error_order_.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/FT_LS.dir/f_error_order_.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/nmizin/CLionProjects/FT_LS/f_error_order_.c -o CMakeFiles/FT_LS.dir/f_error_order_.c.s
+
+CMakeFiles/FT_LS.dir/f_error_order_.c.o.requires:
+
+.PHONY : CMakeFiles/FT_LS.dir/f_error_order_.c.o.requires
+
+CMakeFiles/FT_LS.dir/f_error_order_.c.o.provides: CMakeFiles/FT_LS.dir/f_error_order_.c.o.requires
+	$(MAKE) -f CMakeFiles/FT_LS.dir/build.make CMakeFiles/FT_LS.dir/f_error_order_.c.o.provides.build
+.PHONY : CMakeFiles/FT_LS.dir/f_error_order_.c.o.provides
+
+CMakeFiles/FT_LS.dir/f_error_order_.c.o.provides.build: CMakeFiles/FT_LS.dir/f_error_order_.c.o
+
+
+CMakeFiles/FT_LS.dir/f_permis_denied_.c.o: CMakeFiles/FT_LS.dir/flags.make
+CMakeFiles/FT_LS.dir/f_permis_denied_.c.o: ../f_permis_denied_.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nmizin/CLionProjects/FT_LS/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building C object CMakeFiles/FT_LS.dir/f_permis_denied_.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FT_LS.dir/f_permis_denied_.c.o   -c /Users/nmizin/CLionProjects/FT_LS/f_permis_denied_.c
+
+CMakeFiles/FT_LS.dir/f_permis_denied_.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/FT_LS.dir/f_permis_denied_.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/nmizin/CLionProjects/FT_LS/f_permis_denied_.c > CMakeFiles/FT_LS.dir/f_permis_denied_.c.i
+
+CMakeFiles/FT_LS.dir/f_permis_denied_.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/FT_LS.dir/f_permis_denied_.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/nmizin/CLionProjects/FT_LS/f_permis_denied_.c -o CMakeFiles/FT_LS.dir/f_permis_denied_.c.s
+
+CMakeFiles/FT_LS.dir/f_permis_denied_.c.o.requires:
+
+.PHONY : CMakeFiles/FT_LS.dir/f_permis_denied_.c.o.requires
+
+CMakeFiles/FT_LS.dir/f_permis_denied_.c.o.provides: CMakeFiles/FT_LS.dir/f_permis_denied_.c.o.requires
+	$(MAKE) -f CMakeFiles/FT_LS.dir/build.make CMakeFiles/FT_LS.dir/f_permis_denied_.c.o.provides.build
+.PHONY : CMakeFiles/FT_LS.dir/f_permis_denied_.c.o.provides
+
+CMakeFiles/FT_LS.dir/f_permis_denied_.c.o.provides.build: CMakeFiles/FT_LS.dir/f_permis_denied_.c.o
+
+
+CMakeFiles/FT_LS.dir/f_o_g_p_permissions_.c.o: CMakeFiles/FT_LS.dir/flags.make
+CMakeFiles/FT_LS.dir/f_o_g_p_permissions_.c.o: ../f_o_g_p_permissions_.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nmizin/CLionProjects/FT_LS/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building C object CMakeFiles/FT_LS.dir/f_o_g_p_permissions_.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FT_LS.dir/f_o_g_p_permissions_.c.o   -c /Users/nmizin/CLionProjects/FT_LS/f_o_g_p_permissions_.c
+
+CMakeFiles/FT_LS.dir/f_o_g_p_permissions_.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/FT_LS.dir/f_o_g_p_permissions_.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/nmizin/CLionProjects/FT_LS/f_o_g_p_permissions_.c > CMakeFiles/FT_LS.dir/f_o_g_p_permissions_.c.i
+
+CMakeFiles/FT_LS.dir/f_o_g_p_permissions_.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/FT_LS.dir/f_o_g_p_permissions_.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/nmizin/CLionProjects/FT_LS/f_o_g_p_permissions_.c -o CMakeFiles/FT_LS.dir/f_o_g_p_permissions_.c.s
+
+CMakeFiles/FT_LS.dir/f_o_g_p_permissions_.c.o.requires:
+
+.PHONY : CMakeFiles/FT_LS.dir/f_o_g_p_permissions_.c.o.requires
+
+CMakeFiles/FT_LS.dir/f_o_g_p_permissions_.c.o.provides: CMakeFiles/FT_LS.dir/f_o_g_p_permissions_.c.o.requires
+	$(MAKE) -f CMakeFiles/FT_LS.dir/build.make CMakeFiles/FT_LS.dir/f_o_g_p_permissions_.c.o.provides.build
+.PHONY : CMakeFiles/FT_LS.dir/f_o_g_p_permissions_.c.o.provides
+
+CMakeFiles/FT_LS.dir/f_o_g_p_permissions_.c.o.provides.build: CMakeFiles/FT_LS.dir/f_o_g_p_permissions_.c.o
+
+
+CMakeFiles/FT_LS.dir/f_get_tty_.c.o: CMakeFiles/FT_LS.dir/flags.make
+CMakeFiles/FT_LS.dir/f_get_tty_.c.o: ../f_get_tty_.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nmizin/CLionProjects/FT_LS/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object CMakeFiles/FT_LS.dir/f_get_tty_.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FT_LS.dir/f_get_tty_.c.o   -c /Users/nmizin/CLionProjects/FT_LS/f_get_tty_.c
+
+CMakeFiles/FT_LS.dir/f_get_tty_.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/FT_LS.dir/f_get_tty_.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/nmizin/CLionProjects/FT_LS/f_get_tty_.c > CMakeFiles/FT_LS.dir/f_get_tty_.c.i
+
+CMakeFiles/FT_LS.dir/f_get_tty_.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/FT_LS.dir/f_get_tty_.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/nmizin/CLionProjects/FT_LS/f_get_tty_.c -o CMakeFiles/FT_LS.dir/f_get_tty_.c.s
+
+CMakeFiles/FT_LS.dir/f_get_tty_.c.o.requires:
+
+.PHONY : CMakeFiles/FT_LS.dir/f_get_tty_.c.o.requires
+
+CMakeFiles/FT_LS.dir/f_get_tty_.c.o.provides: CMakeFiles/FT_LS.dir/f_get_tty_.c.o.requires
+	$(MAKE) -f CMakeFiles/FT_LS.dir/build.make CMakeFiles/FT_LS.dir/f_get_tty_.c.o.provides.build
+.PHONY : CMakeFiles/FT_LS.dir/f_get_tty_.c.o.provides
+
+CMakeFiles/FT_LS.dir/f_get_tty_.c.o.provides.build: CMakeFiles/FT_LS.dir/f_get_tty_.c.o
 
 
 # Object files for target FT_LS
@@ -1314,9 +1386,7 @@ FT_LS_OBJECTS = \
 "CMakeFiles/FT_LS.dir/f_ls_strcmp.c.o" \
 "CMakeFiles/FT_LS.dir/f_initialize_struct.c.o" \
 "CMakeFiles/FT_LS.dir/f_reset_variables.c.o" \
-"CMakeFiles/FT_LS.dir/f_get_info.c.o" \
 "CMakeFiles/FT_LS.dir/f_ls_strdup.c.o" \
-"CMakeFiles/FT_LS.dir/f_print_files.c.o" \
 "CMakeFiles/FT_LS.dir/f_ls_join_free.c.o" \
 "CMakeFiles/FT_LS.dir/f_ls_str_length.c.o" \
 "CMakeFiles/FT_LS.dir/f_memmaloc.c.o" \
@@ -1333,7 +1403,12 @@ FT_LS_OBJECTS = \
 "CMakeFiles/FT_LS.dir/f_order_a_z.c.o" \
 "CMakeFiles/FT_LS.dir/f_num_size_.c.o" \
 "CMakeFiles/FT_LS.dir/f_init_get_file_struct.c.o" \
-"CMakeFiles/FT_LS.dir/f_get_length_param_.c.o"
+"CMakeFiles/FT_LS.dir/f_get_length_param_.c.o" \
+"CMakeFiles/FT_LS.dir/f_initialize_flags.c.o" \
+"CMakeFiles/FT_LS.dir/f_error_order_.c.o" \
+"CMakeFiles/FT_LS.dir/f_permis_denied_.c.o" \
+"CMakeFiles/FT_LS.dir/f_o_g_p_permissions_.c.o" \
+"CMakeFiles/FT_LS.dir/f_get_tty_.c.o"
 
 # External object files for target FT_LS
 FT_LS_EXTERNAL_OBJECTS =
@@ -1369,9 +1444,7 @@ FT_LS: CMakeFiles/FT_LS.dir/f_check_argv.c.o
 FT_LS: CMakeFiles/FT_LS.dir/f_ls_strcmp.c.o
 FT_LS: CMakeFiles/FT_LS.dir/f_initialize_struct.c.o
 FT_LS: CMakeFiles/FT_LS.dir/f_reset_variables.c.o
-FT_LS: CMakeFiles/FT_LS.dir/f_get_info.c.o
 FT_LS: CMakeFiles/FT_LS.dir/f_ls_strdup.c.o
-FT_LS: CMakeFiles/FT_LS.dir/f_print_files.c.o
 FT_LS: CMakeFiles/FT_LS.dir/f_ls_join_free.c.o
 FT_LS: CMakeFiles/FT_LS.dir/f_ls_str_length.c.o
 FT_LS: CMakeFiles/FT_LS.dir/f_memmaloc.c.o
@@ -1389,9 +1462,14 @@ FT_LS: CMakeFiles/FT_LS.dir/f_order_a_z.c.o
 FT_LS: CMakeFiles/FT_LS.dir/f_num_size_.c.o
 FT_LS: CMakeFiles/FT_LS.dir/f_init_get_file_struct.c.o
 FT_LS: CMakeFiles/FT_LS.dir/f_get_length_param_.c.o
+FT_LS: CMakeFiles/FT_LS.dir/f_initialize_flags.c.o
+FT_LS: CMakeFiles/FT_LS.dir/f_error_order_.c.o
+FT_LS: CMakeFiles/FT_LS.dir/f_permis_denied_.c.o
+FT_LS: CMakeFiles/FT_LS.dir/f_o_g_p_permissions_.c.o
+FT_LS: CMakeFiles/FT_LS.dir/f_get_tty_.c.o
 FT_LS: CMakeFiles/FT_LS.dir/build.make
 FT_LS: CMakeFiles/FT_LS.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/nmizin/CLionProjects/FT_LS/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Linking C executable FT_LS"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/nmizin/CLionProjects/FT_LS/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Linking C executable FT_LS"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/FT_LS.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -1430,9 +1508,7 @@ CMakeFiles/FT_LS.dir/requires: CMakeFiles/FT_LS.dir/f_check_argv.c.o.requires
 CMakeFiles/FT_LS.dir/requires: CMakeFiles/FT_LS.dir/f_ls_strcmp.c.o.requires
 CMakeFiles/FT_LS.dir/requires: CMakeFiles/FT_LS.dir/f_initialize_struct.c.o.requires
 CMakeFiles/FT_LS.dir/requires: CMakeFiles/FT_LS.dir/f_reset_variables.c.o.requires
-CMakeFiles/FT_LS.dir/requires: CMakeFiles/FT_LS.dir/f_get_info.c.o.requires
 CMakeFiles/FT_LS.dir/requires: CMakeFiles/FT_LS.dir/f_ls_strdup.c.o.requires
-CMakeFiles/FT_LS.dir/requires: CMakeFiles/FT_LS.dir/f_print_files.c.o.requires
 CMakeFiles/FT_LS.dir/requires: CMakeFiles/FT_LS.dir/f_ls_join_free.c.o.requires
 CMakeFiles/FT_LS.dir/requires: CMakeFiles/FT_LS.dir/f_ls_str_length.c.o.requires
 CMakeFiles/FT_LS.dir/requires: CMakeFiles/FT_LS.dir/f_memmaloc.c.o.requires
@@ -1450,6 +1526,11 @@ CMakeFiles/FT_LS.dir/requires: CMakeFiles/FT_LS.dir/f_order_a_z.c.o.requires
 CMakeFiles/FT_LS.dir/requires: CMakeFiles/FT_LS.dir/f_num_size_.c.o.requires
 CMakeFiles/FT_LS.dir/requires: CMakeFiles/FT_LS.dir/f_init_get_file_struct.c.o.requires
 CMakeFiles/FT_LS.dir/requires: CMakeFiles/FT_LS.dir/f_get_length_param_.c.o.requires
+CMakeFiles/FT_LS.dir/requires: CMakeFiles/FT_LS.dir/f_initialize_flags.c.o.requires
+CMakeFiles/FT_LS.dir/requires: CMakeFiles/FT_LS.dir/f_error_order_.c.o.requires
+CMakeFiles/FT_LS.dir/requires: CMakeFiles/FT_LS.dir/f_permis_denied_.c.o.requires
+CMakeFiles/FT_LS.dir/requires: CMakeFiles/FT_LS.dir/f_o_g_p_permissions_.c.o.requires
+CMakeFiles/FT_LS.dir/requires: CMakeFiles/FT_LS.dir/f_get_tty_.c.o.requires
 
 .PHONY : CMakeFiles/FT_LS.dir/requires
 
