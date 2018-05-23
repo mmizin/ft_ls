@@ -32,6 +32,7 @@ SRC =	1_main.c \
         f_time_order_.c \
         f_order_a_z_r_.c \
         f_memdel.c \
+        f_dup_arr_for_r_b_.c \
 
 INC = ft_ls.h
 

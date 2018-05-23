@@ -36,5 +36,6 @@ int 			f_count_files_in_print(char *name, t_ls *l)
 		else
 			c++;
 	}
+	closedir(dir);
 	return (c);
 }

@@ -21,10 +21,14 @@ int 		f_count_file(char **argv, int argc, t_ls *l)
 	i = 1;
 	while (i < argc)
 	{
-		if (!l->a)
+		if (!l->a && (!l->dot || !l->d_dot))
 		{
 			if (argv[i][0] == '.' && (!l->dot || !l->d_dot))
+			{
 				i++;
+				++l->c;
+			}
+
 			else
 			{
 				if ((argv[i] && argv[i][0]) && !lstat(argv[i], &l_stat))

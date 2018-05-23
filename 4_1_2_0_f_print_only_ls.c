@@ -67,7 +67,8 @@ int 			f_print_only_ls_(t_get_file **a, t_ls *l)
 
 	i = f_slen(a[0]->path_name);
 	if ((f_scmp("./", a[0]->path_name) && (!l->dot || !l->d_dot))
-		|| (f_scmp("../", a[0]->path_name) && (!l->dot || !l->d_dot)))
+		|| (f_scmp("../", a[0]->path_name) && (!l->dot || !l->d_dot))
+		|| f_scmp("/", a[0]->path_name))
 		;
 	else if (!l->only_ls || (a[0]->c_arg == 1 && l->dir_on) || l->r_b)
 	{

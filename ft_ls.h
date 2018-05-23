@@ -134,4 +134,5 @@ int 			f_count_file(char **argv, int argc, t_ls *l);
 int 			f_free_(t_get_file **a);
 int				f_free_for_r_b_(t_get_file **a);
 void			f_memdel(void **ap);
+t_get_file		**f_makkok_(t_get_file **a);
 #endif
