@@ -1,33 +1,37 @@
 
 NAME = ft_ls
 
-SRC =	f_bzero.c \
-		f_check_argv.c \
-		f_count_files_in_print.c \
-		f_flag_a_.c \
-		f_flag_L_.c \
-		f_get_arg_in_print.c \
-		f_get_files_from_argv.c \
-		f_get_length_param_.c \
-		f_init_get_file_struct.c \
-		f_initialize_flags.c \
-		f_initialize_struct.c \
-		f_link_uid_gid_t_.c \
-		f_ls_join_free.c \
-		f_ls_str_length.c \
-		f_ls_strcmp.c \
-		f_ls_strdup.c \
-		f_memmaloc.c \
-		f_num_size_.c \
-		f_order_a_z.c \
-		f_print_.c \
-		f_print_only_ls.c \
-		f_reset_variables.c \
-		f_spl.c \
-		main.c \
-		f_permis_denied_.c \
-		f_error_order_.c \
-		f_o_g_p_permissions_.c \
+SRC =	1_main.c \
+		2_f_ls_chec_argv.c \
+        3_0_f_get_files_from_argv.c \
+        3_1_f_count_file_in_argv_.c \
+        4_0_f_print_.c \
+        4_1_1_f_error_order_.c \
+        4_1_2_0_f_print_only_ls.c \
+        4_1_2_1_f_flag_L_.c \
+        4_1_3_f_get_arg_in_print.c \
+        f_ls_strcmp.c \
+        f_initialize_struct.c \
+        f_reset_variables.c \
+        f_ls_strdup.c \
+        f_ls_join_free.c \
+        f_ls_str_length.c \
+        f_bzero.c \
+        f_count_files_in_print.c \
+        f_link_uid_gid_t_.c \
+        f_spl.c \
+        f_order_a_z.c \
+        f_num_size_.c \
+        f_init_get_file_struct.c \
+        f_get_length_param_.c \
+        f_initialize_flags.c \
+        f_permis_denied_.c \
+        f_o_g_p_permissions_.c \
+        f_get_tty_.c \
+        f_free_.c \
+        f_time_order_.c \
+        f_order_a_z_r_.c \
+        f_memdel.c \
 
 INC = ft_ls.h
 

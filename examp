@@ -1,7 +1,0 @@
-ls -R
-ls -Rr
-ls .
-ls ..
-ls .. || . -lRrta MUST SHOW ERROR
-ls
-ls -r-l     ls: illegal option -- - usage: ls [-ABCFGHLOPRSTUWabcdefghiklmnopqrstuwx1] [file ...]

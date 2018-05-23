@@ -60,8 +60,10 @@ int 			f_error_order_(char **b, t_ls *l)
 	}
 	k = 0;
 	while (k < i && b[k])
-		b[k] ? printf("ls: %s: No such file or directory\n", b[k++]) : 1;
-	if (l->ls)
-		exit(EXIT_SUCCESS);
+	{
+		b[k] ? ft_printf("ls: %s: No such file or directory\n", b[k]) : 1;
+		free(b[k++]);
+	}
+	free(b);
 	return (1);
 }

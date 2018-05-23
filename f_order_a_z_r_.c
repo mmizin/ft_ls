@@ -1,14 +1,15 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   f_order_a_z.c                                      :+:      :+:    :+:   */
+/*   f_order_a_z_r_.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nmizin <nmizin@student.unit.ua>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/05/07 13:20:00 by nmizin            #+#    #+#             */
-/*   Updated: 2018/05/07 13:20:00 by nmizin           ###   ########.fr       */
+/*   Created: 2018/05/19 07:51:00 by nmizin            #+#    #+#             */
+/*   Updated: 2018/05/19 07:51:00 by nmizin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 
 #include "ft_ls.h"
 
@@ -47,13 +48,13 @@ static int 		f_part_one_(t_get_file **a, t_get_file *arr, int *i)
 		a[*i]->lng_gid = a[*i + 1]->lng_gid;
 		a[*i]->lng_maj = a[*i + 1]->lng_maj;
 		a[*i]->lng_min = a[*i + 1]->lng_min;
-		a[*i]->lng_min = a[*i + 1]->lng_min;
+		a[*i]->lng_siz_f = a[*i + 1]->lng_siz_f;
 	}
 	*i = 0;
 	return (1);
 }
 
-int 			f_order_a_z_(t_get_file **a, t_ls *l)
+int 			f_order_a_z_r(t_get_file **a, t_ls *l)
 {
 	int				i;
 	int 			tmp;
@@ -64,13 +65,16 @@ int 			f_order_a_z_(t_get_file **a, t_ls *l)
 	arr = NULL;
 	i = 0;
 	tmp = a[0]->c_arg;
-	while (i < tmp - 1)
+	while (i < tmp -1)
 	{
 		one = a[i]->f_name;
+		if (i + 1 != tmp)
 			two = a[i + 1]->f_name;
-		if ((f_lcomp(one, two, l)) == 1)
+		else
+			two = NULL;
+		if (two && (f_lcomp(one, two, l)) == 2)
 			i++;
-		else if ((f_lcomp(one, two, l)) == 2)
+		else if ((f_lcomp(one, two, l)) == 1)
 			f_part_one_(a, arr, &i);
 		else
 			i++;

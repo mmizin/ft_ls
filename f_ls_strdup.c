@@ -18,6 +18,8 @@ char	*f_sdup(const char *s1)
 	size_t	len;
 
 	len = 0;
+	if (!s1)
+		return (0);
 	while (s1[len])
 	{
 		len++;

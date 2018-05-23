@@ -14,12 +14,11 @@
 
 int		f_reset_variabels(t_ls *lls)
 {
-	lls->res		= NULL;
 	lls->i			= 0;
 	lls->j			= 0;
 	lls->tmp		= 0;
 	lls->c			= 0;
-	lls->dname		= NULL;
-	lls->fname		= NULL;
+	lls->kek = NULL;
+	lls->res = NULL;
 	return (1);
 }

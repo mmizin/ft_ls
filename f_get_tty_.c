@@ -21,7 +21,7 @@ int		f_get_tty_width(t_get_file **a, t_ls *l)
 //	printf("::: LINE ::: %d\n", wnd.ts_cols);
 //	printf("::: LNG_NAME ::: %ju\n", a[0]->lng_name);
 	l->width = wnd.ts_cols / (a[0]->lng_name + 8) + 1;
-	l->width = 4;																/* DELL THIS DELL THIS DELL THIS */
+//	l->width = 4;																/* DELL THIS DELL THIS DELL THIS */
 	l->line = (a[0]->c_arg / l->width) > 0 ? (a[0]->c_arg / l->width) : 1;
 	return (1);
 }

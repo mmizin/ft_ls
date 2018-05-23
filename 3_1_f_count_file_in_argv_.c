@@ -1,30 +1,43 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   f_flag_a_.c                                        :+:      :+:    :+:   */
+/*   3_1_f_count_file_in argv_.c                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nmizin <nmizin@student.unit.ua>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/05/01 19:37:00 by nmizin            #+#    #+#             */
-/*   Updated: 2018/05/01 19:37:00 by nmizin           ###   ########.fr       */
+/*   Created: 2018/05/18 16:50:00 by nmizin            #+#    #+#             */
+/*   Updated: 2018/05/18 16:50:00 by nmizin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+
 #include "ft_ls.h"
 
-int			f_flag_a_(t_get_file **a, t_ls *l)
+int 		f_count_file(char **argv, int argc, t_ls *l)
 {
-	int		i;
+	struct stat				l_stat;
+	int 					i;
 
-	i = 0;
-	while (i < a[0]->c_arg)
+	i = 1;
+	while (i < argc)
 	{
-		if ((a[i]->d_name && *a[i]->d_name == '.') || (a[i]->f_name && *a[i]->f_name == '.'))
+		if (!l->a)
 		{
-			l->st_block -= a[i]->m_st.st_blocks;
-			a[i]->d_name ? a[i]->d_name = NULL : (a[i]->f_name = NULL);
+			if (argv[i][0] == '.' && (!l->dot || !l->d_dot))
+				i++;
+			else
+			{
+				if ((argv[i] && argv[i][0]) && !lstat(argv[i], &l_stat))
+					l->c++;
+				i++;
+			}
 		}
+		else
+		{
+			if ((argv[i] && argv[i][0]) && !lstat(argv[i], &l_stat))
+				l->c++;
 			i++;
+		}
 	}
 	return (1);
 }

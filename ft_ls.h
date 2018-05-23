@@ -4,7 +4,7 @@
 
 #ifndef FT_LS_H
 # define FT_LS_H
-# define FLAGS "lRrtan"
+# define FLAGS "lRrtans"
 # define RED   "\x1B[31m"
 # define GRN   "\x1B[32m"
 # define YEL   "\x1B[33m"
@@ -44,7 +44,6 @@
 typedef struct					s_stat_name
 {
 	char 						*f_name;
-	char 						*d_name;
 	char 						*path_name;
 	int 						c_arg;
 	uintmax_t 					lng_name;
@@ -65,7 +64,8 @@ typedef struct					s_struct
 	int							n;
 	int							a;
 	int							t;
-	int							ls;
+	int							s;			/* put 0 befor name of file */
+	int							ls;			/* if no files was find */
 	int							dot;
 	int							d_dot;		/* double dot */
 	int							dashs;		/* when we have 2_dash for file with '-' in name */
@@ -74,8 +74,10 @@ typedef struct					s_struct
 	int							j;
 	unsigned short				width;
 	int							line;
+	int 						file_on;
 	int 						dir_on;
 	int 						c;
+	char 						*kek;
 	time_t 						t2;
 	time_t 						t1;
 	uid_t 						uid;
@@ -85,7 +87,7 @@ typedef struct					s_struct
 	nlink_t						link;
 	int							tmp;
 	int							only_ls;
-	int 						on_flag;	/* Have we some flags or not */
+	int 						flag_on;	/* Have we some flags or not */
 	int							a_rgc;
 	char 						*res;
 	char 						**spl;
@@ -93,29 +95,26 @@ typedef struct					s_struct
 	char						buf[PATH_MAX];
 	ssize_t						bufsiz;
 	char 						*fname;
-	char 						*dname;
-	struct stat					mystat;
+	struct stat					l_st;
 	struct passwd				*s_uid;
 	struct group				*s_gid;
-	t_get_file					**t_arr;
+	struct dirent				*dp;
 }								t_ls;
 
-t_get_file		**f_get_file_from_argv(char **argv, t_ls *l, t_get_file **a);
+t_get_file		**f_get_file_from_argv(char **ar, t_ls *l);
 int				f_scmp(char *s1, char *s2);
 int				f_ls_initialize(t_ls *lls, int argc);
-int				f_ls_chk_argv(char **argv, t_ls *l);
+int				f_ls_chk_ar(char **argv, t_ls *l);
 int				f_reset_variabels(t_ls *lls);
 char			*f_sdup(const char *s1);
 int				f_slen(const char *s);
 char			*f_jo_fr(char  *s1, char *s2, int i);
 char			*ft_strchr(const char *s, int c);
-void			*f_memalloc(size_t size);
 void			f_bzero(void *s, size_t n);
 int 			f_print_(t_get_file **a, t_ls *l);
-t_get_file 		**f_get_arg_in_print(t_get_file **a, char *name, t_ls *l);
-int 			f_count_files_in_print(char *name);
+t_get_file 		**f_get_arg_in_print(char *name, t_ls *l);
+int 			f_count_files_in_print(char *name, t_ls *l);
 int 			f_print_only_ls_(t_get_file **a, t_ls *l);
-int				f_flag_a_(t_get_file **a, t_ls *l);
 int				f_flag_l_small_(t_get_file **a, t_ls *l);
 int 			f_link_uid_gid_t_(t_get_file **a, t_ls *l, int i);
 char    		**f_spl(char *str);
@@ -129,6 +128,10 @@ int				f_get_param_lng_(t_get_file **a, t_ls *l, int i,
 									struct dirent *dp);
 void			o_g_p_permissions_(mode_t val);
 int 			f_initialize_flg(t_ls *l, char res);
-int 			f_permis_denied_(t_get_file **a, t_ls *l);
+int 			f_permis_denied_(char *name, t_ls *l);
 int				f_get_tty_width(t_get_file **a, t_ls *l);
+int 			f_count_file(char **argv, int argc, t_ls *l);
+int 			f_free_(t_get_file **a);
+int				f_free_for_r_b_(t_get_file **a);
+void			f_memdel(void **ap);
 #endif

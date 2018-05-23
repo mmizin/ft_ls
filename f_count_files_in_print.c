@@ -12,15 +12,29 @@
 
 #include "ft_ls.h"
 
-int 			f_count_files_in_print(char *name)
+int 			f_count_files_in_print(char *name, t_ls *l)
 {
 	DIR				*dir;
 	int 			c;
 	struct dirent	*dp;
 
 	c = 0;
-	dir = opendir(name);
+	if (!(dir = opendir(name)))
+	{
+		f_permis_denied_(name, l);
+		return (c);
+	}
 	while ((dp = readdir(dir)) != NULL)
-		c++;
+	{
+		if (!l->a)
+		{
+			if (dp->d_name[0] == '.' && (!l->dot || !l->d_dot))
+				;
+			else
+				c++;
+		}
+		else
+			c++;
+	}
 	return (c);
 }

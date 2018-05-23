@@ -30,12 +30,11 @@ int		f_ls_initialize(t_ls *lls, int argc)
 	lls->tmp			= 0;
 	lls->bufsiz			= PATH_MAX;
 	lls->st_block		= 0;
-	lls->on_flag		= 0;
 	lls->dir_on			= 0;
+	lls->file_on		= 0;
 	lls->dashs			= 0;
 	lls->only_ls		= 0;
 	lls->res			= NULL;
 	lls->fname			= NULL;
-	lls->dname			= NULL;
 	return (1);
 }

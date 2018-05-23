@@ -26,7 +26,11 @@ int 		f_initialize_flg(t_ls *l, char res)
 	else if (res == 'a')
 		l->a = 1;
 	else if (res == 'n')
+	{
 		l->n = 1;
+		l->l = 1;
+	}
+
 	return (1);
 }
 
