@@ -51,8 +51,10 @@ static int 		f_part_one_(t_get_file **a, t_ls *l)
 		f_part_two_(a, &i, l);
 	if (l->ls && !l->r_b)
 	{
+
 		f_free_(a);
 		free(a);
+
 		exit(EXIT_SUCCESS);
 	}
 	ft_printf("\n");

@@ -4,7 +4,7 @@
 
 #ifndef FT_LS_H
 # define FT_LS_H
-# define FLAGS "lRrtans"
+# define FLAGS "lRrtans1"
 # define RED   "\x1B[31m"
 # define GRN   "\x1B[32m"
 # define YEL   "\x1B[33m"
@@ -61,6 +61,7 @@ typedef struct					s_struct
 	int							r;
 	int							r_b;		/* Flag '-R' */
 	int							l;
+	int 						one;		/* Flag '-1' */
 	int							n;
 	int							a;
 	int							t;

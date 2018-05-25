@@ -24,7 +24,7 @@ static char		**f_fill_arr_error_(char **ar, t_ls *l)
 	j = 0;
 	l->file_on = 0;
 	l->dashs = 0;
-	error = (char **)malloc(sizeof(char*) * (l->c + 1));
+	error = (char **)malloc(sizeof(char*) * (l->c + 1));            /* ******** */
 	error[l->c] = NULL;
 	while (i < l->a_rgc)
 	{
@@ -36,16 +36,12 @@ static char		**f_fill_arr_error_(char **ar, t_ls *l)
 			l->flag_on = 1;
 		if (ar[i][0] != '-')
 		{
-			lstat(ar[i], &l->l_st) ? error[j++] = f_sdup(ar[i]) : 0;
+			lstat(ar[i], &l->l_st) ? error[j++] = f_sdup(ar[i]) : 0;            /* ******** */
 			++l->file_on;
 		}
-		if (ar[i][0] == '-' && l->dashs && !f_scmp("--", ar[i]))
+		if (ar[i][0] == '-' && !l->file_on && l->dashs && !f_scmp("--", ar[i]))
 		{
-			lstat(ar[i], &l->l_st) ? error[j++] = f_sdup(ar[i]) : 0;
-		}
-		if (ar[i][0] == '-' && l->file_on && !l->dashs)
-		{
-			lstat(ar[i], &l->l_st) ? error[j++] = f_sdup(ar[i]) : 0;
+			lstat(ar[i], &l->l_st) ? error[j++] = f_sdup(ar[i]) : 0;            /* ******** */
 		}
 		i++;
 	}
@@ -56,12 +52,10 @@ int				f_ls_chk_ar(char **ar, t_ls *l)
 {
 	int		i;
 	int 	j;
-	char 	*s;
 
 	i = 1;
 	while (i < l->a_rgc)
 	{
-		s = ar[i];
 		if ((f_scmp(ar[i], ".") && (l->dot = 1))
 									|| (f_scmp(ar[i], "..") && (l->d_dot = 1)))
 									l->file_on = 1;
@@ -83,17 +77,9 @@ int				f_ls_chk_ar(char **ar, t_ls *l)
 			l->flag_on = 1;
 		}
 		if (ar[i][0] != '-')
-		{
 			!lstat(ar[i], &l->l_st) ? ++l->file_on : ++l->c;
-		}
-		if (ar[i][0] == '-' && l->dashs && !f_scmp("--", ar[i]))
-		{
+		if (ar[i][0] == '-' && !l->file_on && l->dashs && !f_scmp("--", ar[i]))
 			!lstat(ar[i], &l->l_st) ? 0 : ++l->c;
-		}
-		if (ar[i][0] == '-' && l->file_on && !l->dashs)
-		{
-			++l->c;
-		}
 		i++;
 	}
 	if (l->c)

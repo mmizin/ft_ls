@@ -27,6 +27,7 @@ int 			f_free_(t_get_file **a)
 			if (a[i]->path_name != NULL)
 			{
 				free(a[i]->path_name);
+				a[i]->path_name = NULL;
 			}
 			free(a[i]);
 		}

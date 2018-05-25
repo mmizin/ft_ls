@@ -20,7 +20,7 @@ static int 		f_part_two_(t_get_file **a, t_get_file *arr, int tmp)
 
 	i = 0;
 	j = (tmp - 1) /2;
-	while (i <= j)
+	while (i < j)
 	{
 		arr = a[i];
 		a[i] = a[tmp - 1];

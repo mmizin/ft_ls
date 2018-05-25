@@ -84,7 +84,7 @@ static int		f_part_one_(char **argv, t_ls *l, t_get_file **a)
 		}
 		S_ISDIR(a[l->i]->m_st.st_mode) ? l->dir_on = 1 : 0;
 		if (++l->i != l->c)
-			a[l->i] = (t_get_file *)malloc(sizeof(t_get_file));
+			a[l->i] = (t_get_file *)malloc(sizeof(t_get_file));            /* ******** */
 	}
 	return (1);
 }
@@ -96,10 +96,10 @@ t_get_file		**f_get_file_from_argv(char **argv, t_ls *l)
 
 	tmp = argv;
 	f_count_file(argv, l->a_rgc, l);
-	l->c == 0 ? l->ls = 1 : 0;
-	l->c == 0 ? (l->only_ls = 1) && ++l->c: 1;
-	a = (t_get_file **)malloc(sizeof(t_get_file *) * l->c);
-	a[0] = (t_get_file *)malloc(sizeof(t_get_file));
+	l->c == 0 && !l->eror? l->ls = 1 : 0;
+	l->c == 0 && !l->eror? (l->only_ls = 1) && ++l->c: 1;
+	a = (t_get_file **)malloc(sizeof(t_get_file *) * l->c);            /* ******** */
+	a[0] = (t_get_file *)malloc(sizeof(t_get_file));            /* ******** */
 	a[0]->c_arg = l->c;
 	while (l->i < l->c)
 	{

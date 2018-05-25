@@ -24,7 +24,6 @@ static int 		f_part_two_(t_get_file **a, t_ls *l)
 				ft_printf("%-*s", a[0]->lng_name + 8, a[l->i]->f_name);
 				free(a[l->i]->f_name);
 				a[l->i]->f_name = NULL;
-				ft_printf("\n");
 			}
 		}
 		else if (l->tmp + l->line < a[0]->c_arg && (l->tmp += l->line))
@@ -34,7 +33,6 @@ static int 		f_part_two_(t_get_file **a, t_ls *l)
 				ft_printf("%-*s", a[0]->lng_name + 8, a[l->tmp]->f_name);
 				free(a[l->tmp]->f_name);
 				a[l->tmp]->f_name = NULL;
-				ft_printf("\n");
 			}
 		}
 		l->c++;
@@ -50,7 +48,7 @@ static int 		f_part_one_(t_get_file **a, t_ls *l)
 	int i;
 
 	((l->r && l->t) || (l->t && !l->r)) ? f_time_order_(a, l) : 1;
-	l->r && !l->t ? f_order_a_z_r(a, l) : 0;
+	l->r ? f_order_a_z_r(a, l) : 0;
 	!l->t && !l->r ? f_order_a_z_(a, l) : 0;
 	i = 0;
 	if (l->l)
@@ -78,13 +76,14 @@ static int 		f_print_only_files_(t_get_file **a, t_ls *l)
 			f_part_two_(a, l);
 		}
 		f_free_(a);
-//		ft_printf("\n");    /* if no print files put \n fucking */
+		ft_printf("\n");    /* if no print files put \n fucking */
 	}
+
 	if (l->dir_on || l->r_b)
 		return (1);
 	else
 	{
-		free(a);
+//		free(a);
 		exit(EXIT_SUCCESS);
 	}
 }
@@ -111,6 +110,7 @@ int 			f_print_(t_get_file **a, t_ls *l)
 		}
 		i++;
 	}
+	f_free_(a);
 	free(a);
 	return (1);
 }

@@ -25,7 +25,7 @@ t_get_file		**f_makkok_(t_get_file **a)
 	{
 		tmp[i]->f_name = f_sdup(a[i]->f_name);
 		tmp[i]->c_arg = a[i]->c_arg;
-		tmp[i]->path_name = f_sdup(a[i]->path_name);
+		tmp[i]->path_name = f_sdup(a[0]->path_name);
 		tmp[i]->lng_name = a[i]->lng_name;
 		tmp[i]->lng_link = a[i]->lng_link;
 		tmp[i]->lng_uid = a[i]->lng_uid;

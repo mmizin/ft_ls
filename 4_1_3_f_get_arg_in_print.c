@@ -20,6 +20,7 @@ static int 			f_part_four_(t_ls *l, t_get_file **tmp, int i)
 		;
 	else if (S_ISDIR(tmp[i]->m_st.st_mode))
 	{
+		free(l->kek);
 		l->kek = f_jo_fr(tmp[0]->path_name,
 						 tmp[i]->f_name, 0);             /* +++ */
 		f_get_arg_in_print(l->kek, l);
@@ -39,6 +40,9 @@ static int			f_part_three_(t_get_file **a, t_ls *l)
 		tmp = NULL;
 		tmp = f_makkok_(a);
 		f_print_only_ls_(a, l);
+		((l->r && l->t) || (l->t && !l->r)) ? f_time_order_(tmp, l) : 1;
+		l->r ? f_order_a_z_r(tmp, l) : 0;
+		!l->t && !l->r ? f_order_a_z_(tmp, l) : 0;
 		i = 0;
 		while (i < tmp[0]->c_arg)
 		{
@@ -96,11 +100,13 @@ t_get_file 			**f_get_arg_in_print(char *name, t_ls *l)
 	i = 0;
 	a = NULL;
 	f_part_one_(&a, l, name);
+
 	if (!l->c)
 		return NULL;
 	if (!(dir = opendir(name)))
 		if (f_permis_denied_(name, l))
 			return NULL;
+
 	while ((dp = readdir(dir)) != NULL)
 	{
 		if (!l->a && (dp->d_name[0] == '.' && (!l->dot || !l->d_dot)))
@@ -108,7 +114,10 @@ t_get_file 			**f_get_arg_in_print(char *name, t_ls *l)
 		else
 			f_part_two_(a, l, dp, &i);
 	}
+
 	f_part_three_(a, l);
+	if (!l->r_b)
+		free(l->kek);
 	f_reset_variabels(l);
 	closedir(dir);
 	return (a);

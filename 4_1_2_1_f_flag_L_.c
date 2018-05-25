@@ -19,7 +19,7 @@ int				f_flag_l_small_(t_get_file **a, t_ls *l)
 
 	i = 0;
 	((l->r && l->t) || (l->t && !l->r)) ? f_time_order_(a, l) : 1;
-	l->r && !l->t ? f_order_a_z_r(a, l) : 0;
+	l->r ? f_order_a_z_r(a, l) : 0;
 	!l->t && !l->r ? f_order_a_z_(a, l) : 0;
 	ft_printf("total %d\n", l->st_block);
 	while (i < a[0]->c_arg)

@@ -30,6 +30,8 @@ int 		f_initialize_flg(t_ls *l, char res)
 		l->n = 1;
 		l->l = 1;
 	}
+	else if (res == '1')
+		l->one = 1;
 
 	return (1);
 }
