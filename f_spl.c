@@ -12,7 +12,8 @@
 
 #include "ft_ls.h"
 
-static int f_size(char *str) {
+static int	f_size(char *str)
+{
 	int c;
 
 	c = 0;
@@ -30,7 +31,7 @@ static int f_size(char *str) {
 	return (c);
 }
 
-static int f_letter(char *str)
+static int	f_letter(char *str)
 {
 	int c;
 
@@ -45,13 +46,13 @@ static int f_letter(char *str)
 	return (c);
 }
 
-char    **f_spl(char *str)
+char		**f_spl(char *str)
 {
-	int i;
-	int j;
-	int letter;
-	int word;
-	char **new;
+	int		i;
+	int		j;
+	int		letter;
+	int		word;
+	char	**new;
 
 	i = 0;
 	word = f_size(str);

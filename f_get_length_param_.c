@@ -12,7 +12,7 @@
 
 #include "ft_ls.h"
 
-static int 	f_ischr_isblk(t_get_file **a, int i)
+static int	f_ischr_isblk(t_get_file **a, int i)
 {
 	uintmax_t j;
 	uintmax_t k;
@@ -49,7 +49,7 @@ int			f_get_param_lng_(t_get_file **a, t_ls *l, int i, struct dirent *dp)
 	k = 0;
 	j = f_slen(dp->d_name);
 	a[0]->lng_name = a[0]->lng_name < j ? j : a[0]->lng_name;
-	k = f_num_size((uintmax_t) a[i]->m_st.st_nlink, 10);
+	k = f_num_size((uintmax_t)a[i]->m_st.st_nlink, 10);
 	a[0]->lng_link = a[0]->lng_link < k ? k : a[0]->lng_link;
 	if (l->n)
 		f_flag_n_(a, i);

@@ -12,45 +12,39 @@
 
 #include "ft_ls.h"
 
-static int 			f_part_three_(t_get_file **a, t_ls *l, int i)
+static int			f_part_three_(t_get_file **a, t_ls *l, int i)
 {
-	/* TIME */
+	t_get_variables v;
+
 	if ((time(&l->t1) - l->t2) > 15778800)
 		ft_printf(" %-4s%-3s%s", l->spl[1], l->spl[2], l->spl[4]);
 	else if ((l->t2 - time(&l->t1)) > 15778800)
 		ft_printf(" %-4s%-3s%-1s", l->spl[1], l->spl[2], l->spl[4]);
 	else
 		ft_printf(" %-4s%-3s%-1.5s", l->spl[1], l->spl[2], l->spl[3]);
-	/* NAME FILE */
 	if (S_ISLNK(a[i]->m_st.st_mode))
 	{
-		l->fname = f_jo_fr(a[0]->path_name, a[i]->f_name, 0);
-		(readlink(l->fname, l->buf, l->bufsiz)) != -1 ?
+		v.ptr2 = f_jo_fr(a[0]->path_name, "/", 0);
+		v.ptr1 = f_jo_fr(v.ptr2, a[i]->f_name, 1);
+		(readlink(!v.ptr1 ? a[i]->f_name : 0, l->buf, l->bufsiz)) != -1 ?
 		ft_printf(" %s -> %s", a[i]->f_name, l->buf) : 0;
 		f_bzero(l->buf, PATH_MAX);
-		free(l->fname);
-		l->fname = NULL;
+		free(v.ptr1);
 	}
 	else
 	{
 		ft_printf(" %s", a[i]->f_name);
-		free(l->fname);
-		l->fname = NULL;
 	}
-
 	return (1);
 }
 
-static int 			f_part_two_(t_get_file **a, t_ls *l, int i)
+static int			f_part_two_(t_get_file **a, t_ls *l, int i)
 {
-	/* NUMBER OF LINK */
-	ft_printf("  %*d ",a[0]->lng_link , l->link);
-	/* IF FLAG 'n' IS ON PRINT USER ID & GROUP ID */
+	ft_printf("  %*d ", a[0]->lng_link, l->link);
 	l->n ? ft_printf("%-*u  %-*u", a[0]->lng_uid,
-					 l->s_uid->pw_uid, a[0]->lng_gid, l->s_uid->pw_gid)
-		 : ft_printf("%-*s  %-*s", a[0]->lng_uid,
-					 l->s_uid->pw_name, a[0]->lng_gid, l->s_gid->gr_name);
-	/* SIZE OF FILE */
+		l->s_uid->pw_uid, a[0]->lng_gid, l->s_uid->pw_gid)
+	: ft_printf("%-*s  %-*s", a[0]->lng_uid,
+					l->s_uid->pw_name, a[0]->lng_gid, l->s_gid->gr_name);
 	if (S_ISCHR(a[i]->m_st.st_mode) || S_ISBLK(a[i]->m_st.st_mode))
 	{
 		l->maj = major(a[i]->m_st.st_rdev);
@@ -63,17 +57,15 @@ static int 			f_part_two_(t_get_file **a, t_ls *l, int i)
 	}
 	else
 		ft_printf("  %*lld", (int)a[0]->lng_siz_f, a[i]->m_st.st_size);
-
-
 	return (1);
 }
 
-static int 			f_part_one_(t_get_file **a, t_ls *l, int i)
+static int			f_part_one_(t_get_file **a, t_ls *l, int i)
 {
 	l->res = NULL;
 	l->uid = a[i]->m_st.st_uid;
 	l->gid = a[i]->m_st.st_gid;
-	l->t2 = a[i]->m_st.st_ctimespec.tv_sec;
+	l->t2 = a[i]->m_st.st_mtimespec.tv_sec;
 	l->res = ctime(&l->t2);
 	l->spl = f_spl(l->res);
 	l->link = a[i]->m_st.st_nlink;
@@ -82,9 +74,9 @@ static int 			f_part_one_(t_get_file **a, t_ls *l, int i)
 	return (1);
 }
 
-int 				f_link_uid_gid_t_(t_get_file **a, t_ls *l, int i)
+int					f_link_uid_gid_t_(t_get_file **a, t_ls *l, int i)
 {
-	char 	**tmp;
+	char	**tmp;
 
 	f_part_one_(a, l, i);
 	tmp = l->spl;
@@ -97,7 +89,6 @@ int 				f_link_uid_gid_t_(t_get_file **a, t_ls *l, int i)
 	}
 	free(tmp);
 	l->spl = NULL;
-	f_free_(a);
 	ft_printf("\n");
 	return (1);
 }

@@ -10,8 +10,21 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-
 #include "ft_ls.h"
+
+static int		f_part_one(char **b, int i)
+{
+	int	k;
+
+	k = 0;
+	while (k < i && b[k])
+	{
+		b[k] ? ft_printf("ft_ls: %s: No such file or directory\n", b[k]) : 1;
+		free(b[k++]);
+	}
+	free(b);
+	return (1);
+}
 
 static	int		f_lcomp(char *one, char *two, t_ls *l)
 {
@@ -33,15 +46,14 @@ static	int		f_lcomp(char *one, char *two, t_ls *l)
 	return (0);
 }
 
-int 			f_error_order_(char **b, t_ls *l)
+int				f_error_order_(char **b, t_ls *l)
 {
 	char	*tmp;
 	int		i;
-	int 	k;
+	int		k;
 
 	i = 0;
 	k = 0;
-
 	if (!*b)
 		return (1);
 	while (b[i])
@@ -58,12 +70,6 @@ int 			f_error_order_(char **b, t_ls *l)
 		else
 			k++;
 	}
-	k = 0;
-	while (k < i && b[k])
-	{
-		b[k] ? ft_printf("ls: %s: No such file or directory\n", b[k]) : 1;
-		free(b[k++]);
-	}
-	free(b);
+	f_part_one(b, i);
 	return (1);
 }
