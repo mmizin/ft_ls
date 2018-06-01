@@ -41,7 +41,7 @@ static int			f_part_three_(t_get_file **a, t_ls *l, t_get_variables *v)
 }
 
 static int			f_part_two_(t_get_file **a, t_ls *l, struct dirent *dp,
-														t_get_variables *v)
+								  t_get_variables *v)
 {
 	int	i;
 
@@ -50,7 +50,7 @@ static int			f_part_two_(t_get_file **a, t_ls *l, struct dirent *dp,
 	f_initialize_lng(a, i);
 	a[i]->c_arg = v->c;
 	i == 0 ? a[i]->path_name = f_sdup(v->ptr2)
-			: (a[i]->path_name = f_sdup(a[0]->path_name));
+		   : (a[i]->path_name = f_sdup(a[0]->path_name));
 	free(v->ptr2);
 	v->ptr2 = NULL;
 	v->ptr2 = f_jo_fr(v->ptr1, dp->d_name, 0);
@@ -63,14 +63,14 @@ static int			f_part_two_(t_get_file **a, t_ls *l, struct dirent *dp,
 }
 
 static int			f_part_one_(t_get_file ***a, t_ls *l, t_get_variables *v,
-																	char *name)
+								  char *name)
 {
 	int	lng_name;
 
 	v->ptr2 = f_sdup(name);
 	lng_name = f_slen(v->ptr2);
 	v->ptr2[lng_name - 1] == '/' ? v->ptr1 = f_sdup(v->ptr2)
-									: (v->ptr1 = f_jo_fr(v->ptr2, "/", 0));
+								 : (v->ptr1 = f_jo_fr(v->ptr2, "/", 0));
 	v->c = f_count_files_in_print(v->ptr1, l);
 	if (!v->c)
 	{
@@ -83,6 +83,28 @@ static int			f_part_one_(t_get_file ***a, t_ls *l, t_get_variables *v,
 	*a = (t_get_file **)malloc(sizeof(t_get_file *) * v->c);
 	l->st_block = 0;
 	return (v->c);
+}
+
+static int			f_part_four_(t_get_file **a, t_ls *l, t_get_variables *v,
+								   struct dirent *dp)
+{
+	if (l->a_b && !l->a)
+	{
+		if (f_scmp(dp->d_name, ".") || f_scmp(dp->d_name, ".."))
+			;
+		else
+			f_part_two_(a, l, dp, v);
+	}
+	else if (!l->a)
+	{
+		if (dp->d_name[0] == '.')
+			;
+		else
+			f_part_two_(a, l, dp, v);
+	}
+	else
+		f_part_two_(a, l, dp, v);
+	return (1);
 }
 
 t_get_file			**f_get_arg_in_print(char *name, t_ls *l)
@@ -101,22 +123,7 @@ t_get_file			**f_get_arg_in_print(char *name, t_ls *l)
 			return (NULL);
 	while ((dp = readdir(dir)) != NULL)
 	{
-		if (l->a_b && !l->a)
-		{
-			if (f_scmp(dp->d_name, ".") || f_scmp(dp->d_name, ".."))
-				;
-			else
-				f_part_two_(a, l, dp, &v);
-		}
-		else if (!l->a)
-		{
-			if (dp->d_name[0] == '.')
-				;
-			else
-				f_part_two_(a, l, dp, &v);
-		}
-		else
-			f_part_two_(a, l, dp, &v);
+		f_part_four_(a, l, &v, dp);
 	}
 	l->r_b ? f_part_three_(a, l, &v) : 0;
 	free(v.ptr1);

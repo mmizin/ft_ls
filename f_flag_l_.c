@@ -29,7 +29,8 @@ int				f_flag_l_small_(t_get_file **a, t_ls *l)
 		a[i]->f_name ? val = a[i]->m_st.st_mode : 1;
 		a[i]->f_name ? o_g_p_permissions_(val) : 1;
 		a[i]->f_name ? f_link_uid_gid_t_(a, l, i) : 1;
-		if (S_ISLNK(a[i]->m_st.st_mode))
+		if (i + 1 < a[0]->c_arg && S_ISLNK(a[i]->m_st.st_mode)
+			&& !S_ISREG(a[i + 1]->m_st.st_mode))
 			break ;
 		i++;
 	}

@@ -26,7 +26,7 @@ static int			f_part_three_(t_get_file **a, t_ls *l, int i)
 	{
 		v.ptr2 = f_jo_fr(a[0]->path_name, "/", 0);
 		v.ptr1 = f_jo_fr(v.ptr2, a[i]->f_name, 1);
-		(readlink(!v.ptr1 ? a[i]->f_name : 0, l->buf, l->bufsiz)) != -1 ?
+		(readlink(!v.ptr1 ? a[i]->f_name : v.ptr1, l->buf, l->bufsiz)) != -1 ?
 		ft_printf(" %s -> %s", a[i]->f_name, l->buf) : 0;
 		f_bzero(l->buf, PATH_MAX);
 		free(v.ptr1);
