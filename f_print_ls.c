@@ -15,7 +15,6 @@
 static int		f_part_two__(t_get_file **a, t_get_variables *v, t_ls *l)
 {
 	v->c = 0;
-
 	while (v->c < l->width)
 	{
 		if (!v->c)
@@ -62,7 +61,8 @@ int				f_print_ls_(t_get_file **a, t_ls *l)
 		|| (f_scmp("..", a[0]->path_name) && (!l->dot || !l->d_dot))
 		|| f_scmp("/", a[0]->path_name))
 		;
-	else if ((!l->d && !l->ls && l->a_rgc != 1 && a[0]->path_name) || l->r_b)
+	else if ((!l->d && !l->ls && l->a_rgc != 1 && a[0]->path_name)
+					|| (l->r_b && a[0]->path_name))
 	{
 		a[0]->path_name[i - 1] == '/'
 		? ft_printf("%.*s:\n", i - 1, a[0]->path_name)

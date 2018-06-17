@@ -55,7 +55,7 @@ int			f_count_file(char **argv, int argc, t_ls *l)
 	return (v.c);
 }
 
-static int f_part_two_(t_ls *l, char *name, int *c)
+static int	f_part_two_(t_ls *l, char *name, int *c)
 {
 	if (l->a_b && !l->a)
 	{
